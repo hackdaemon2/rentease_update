@@ -1,0 +1,612 @@
+{% extends 'main_app/home_base2.html' %}
+{% load static %}
+
+{% block title %}
+Moving Service
+{% endblock title %}
+{% block pagestyle %}
+<link rel="stylesheet" type="text/css" href="{% static 'main_app/assets/css/moving-service-style.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'main_app/assets/css/common-style.css' %}">
+	<link rel="stylesheet" href="{% static 'main_app/assets/css/animate.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'main_app/assets/css/chat-style.css' %}">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/css/bootstrap-datepicker.min.css" />
+	<style type="text/css">
+		.datepicker{
+				position: absolute!important;
+			    top: 600.547px !important;
+   				left: 700.141px !important;
+		}
+		
+
+	</style>
+{% endblock pagestyle %}
+{% block contents %}
+<section class="service d-flex nav-top-margin" >
+			<div class="container-fluid" style="position: relative;">
+
+				<!-- online booking row  starts-->
+				<div class="row justify-content-center online-book-row">
+					<div class="col-12 text-center reddish-color book-padding">
+						<h1 class="font-weight-bold">
+							Book your move online
+						</h1>
+						<h4 style="color:rgb(176,152,24);">
+							<small>Get a Whooping 45% discount for goods above 0kg</small> 
+						</h4>
+					</div>
+					<!-- moving-form-container -->
+					<!-- booking form starts -->
+						<div class="row justify-content-center ">
+					<div class="moving-form-wrapper">
+					 <form id="moving-form">
+						
+						<!-- first city row starts -->
+						<div class="form-row">
+							<div class="col form-group">
+								<div class="input-group pr-0">
+								    <div class="input-group-prepend">
+								      <span class="input-group-text">
+								      	<img src="{% static 'main_app/assets/images/moving-from.png' %}"> <small class="font-weight-bold"> Moving From:</small> </span>
+								    </div>
+									 <input type="text" class="form-control border-left-0" placeholder="Zip or City">
+								</div> 
+							</div>
+						</div>
+							
+						<div class="form-row mt-2">
+						<div class="col form-group">
+							<div class="input-group">
+							    <div class="input-group-prepend">
+							      <span class="input-group-text">
+							      	<img src="{% static 'main_app/assets/images/moving-to.png' %}"> <small class="font-weight-bold"> Moving To:</small> </span>
+							    </div>
+								  <input type="text" class="form-control border-left-0" placeholder="Zip or City">
+							</div> 
+						</div>
+						</div>
+							<!-- select cities row ends -->
+							
+							<div class="form-row mt-2">
+								<div class="col form-group">
+								<label><small class="font-weight-bold dark-yellow-color">Move Size</small></label>
+									<div class="input-group pr-0">
+									    <div class="input-group-prepend">
+									      <span class="input-group-text">
+									      	 <i class="fas fa-home"></i></span>
+									    </div>
+										<select class="form-control border-left-0" id="exampleFormControlSelect1">
+						                <option><small>Studio</small> </option>
+						                <option>2</option>
+						                <option>3</option>
+						                <option>4</option>
+						                <option>5</option>
+						              </select>
+									</div> 
+								</div>
+								<!-- date picker -->
+								<div class="col form-group dates" id="date1">
+	               				<label><small class="font-weight-bold dark-yellow-color">Move Date</small></label>
+	                   				<div class="input-group pr-0 start_date">
+	                       				<div class="input-group-prepend">
+				                            <span class="input-group-text start_date_calendar"  aria-hidden="true ">
+				                                   <i class="fas fa-calendar-alt"></i>
+				                            </span>
+	                           			</div>
+	                            		<input type="text" class="form-control border-left-0 bg-white start_date" placeholder="DD/MM/YYYY"  id="startdate_datepicker">
+	                            	</div>
+	          					 </div>
+							</div>
+
+							<!-- toggle switch   starts-->
+							<div class="form-row mt-2">
+								<div class="col form-group">
+									<div class=" custom-control custom-switch" >
+									  	<input type="checkbox" class="custom-control-input" id="store">
+									     <label data-toggle="collapse" data-target="#additional-store" class="custom-control-label" for="store" style="cursor: pointer;" ><small class=" dark-yellow-color" >Additional pick up store</small></label>
+									</div>
+								</div>
+							</div>
+							<!-- additional store input starts -->
+							<div class="form-row collapse" id="additional-store">
+								<div class="col form-group" >
+									<div class="input-group pr-0">
+									    <div class="input-group-prepend">
+									      <span class="input-group-text">
+									      	 <i class="fas fa-map-marker-alt"></i></span>
+									    </div>
+										<input type="text" class="form-control border-left-0" placeholder="zip or city">
+									</div> 
+								</div>
+							</div>
+							<!-- additional store input ends -->
+							
+							<div class="form-row">
+								<div class="col form-group">
+									<div class=" custom-control custom-switch" >
+									  	<input type="checkbox" class="custom-control-input" id="drop-off" >
+									    <label class="custom-control-label" for="drop-off" style="cursor: pointer;" data-toggle="collapse" data-target="#additional-drop-off"><small class=" dark-yellow-color">Additional drop-off stop</small>
+									    </label>
+									</div>
+								</div>
+							</div>
+							<!-- additional drop-off input starts -->
+							<div class="form-row collapse" id="additional-drop-off">
+								<div class="col form-group">
+									<div class="input-group pr-0">
+									    <div class="input-group-prepend">
+									      <span class="input-group-text">
+									      	 <i class="fas fa-map-marker-alt"></i></span>
+									    </div>
+										<input type="text" class="form-control border-left-0" placeholder="zip or city">
+									</div> 
+								</div>
+							</div>
+							<!-- additional drop-off input ends -->
+							<div class="form-row">
+								<div class="col form-group">
+									<div class=" custom-control custom-switch" >
+									  	<input type="checkbox" class="custom-control-input" id="storage" >
+									    <label data-toggle="collapse" data-target="#additional-storage" class="custom-control-label" for="storage" style="cursor: pointer;"><small class=" dark-yellow-color">Add storage</small>
+									    </label>
+									</div>
+								</div>
+							</div>
+							<!-- additional storage input starts -->
+							<div class="collapse" id="additional-storage">
+								<div class="form-row ">
+									<div class="col form-group mb-0">
+										<label class="radio-wrapper hard-brown" id="move-to-storage">
+											<small class=" dark-yellow-color">
+												<span class="font-weight-bold">Move to storage</span>
+												<span class="d-block">Includes moving in and first month storage</span>  
+											</small> 
+										  <input type="radio" name="radio">
+										  <span class="checkmark"></span>
+										</label>
+									</div>	
+								</div>
+								<div class="form-row ">
+									<div class="col form-group mb-0 ">
+										<label class="radio-wrapper hard-brown" id="move-short-time">
+											<small class=" dark-yellow-color">
+												<span class="font-weight-bold">Move a store for a short time (upto 45 days)</span>
+												<span class="d-block">Includes moving in, storage and moving out</span>  
+											</small> 
+										  <input type="radio" name="radio">
+										  <span class="checkmark"></span>
+										</label>
+									</div>	
+								</div>
+								<div class="form-row" id="out-date" style="display: none;">
+									<div class="col form-group mb-0 ">
+										<label>
+											<small class=" dark-yellow-color">
+												<span>Out of storage delivery date</span>
+											</small> 
+										</label>
+									</div>	
+									<div class="col form-group dates" style="position: relative;">
+	                   				<div class="input-group pr-0 end_date">
+	                       				<div class="input-group-prepend">
+				                            <span class="input-group-text start_date_calendar"  aria-hidden="true ">
+				                                   <i class="fas fa-calendar-alt"></i>
+				                            </span>
+	                           			</div>
+	                            		<input type="text" class="form-control border-left-0 bg-white end_date" placeholder="DD/MM/YYYY"  id="enddate_datepicker">
+	                            	</div>
+	          					 </div>
+								</div>
+							</div>
+							<!-- date picker starts -->
+
+							<!-- date picker ends -->
+							<!-- additional storage input ends -->
+
+							<!-- toggle switch ends -->
+						    <div class="form-row mt-2">
+								<div class="col form-group"> 
+									<a href="select-items.html" class="btn btn-sm btn-compare">Compare Movers and prices</a>
+								</div> <!-- form-group end.// -->
+							</div> <!-- form-group end.// -->                                   
+						</form>
+					</div>
+				</div>
+					<!-- booking form ends -->
+				</div>
+				<!-- online booking row  ends-->
+			</div>
+		</section>
+</header>
+<!-- Header ends -->
+
+<!-- main boddy starts -->
+
+	<main  id="main" class="container-fluid">
+	     
+	    <section class="section-3 row justify-content-center">
+	    <div class="col-xl-5 col-lg-7 col-sm-8">
+			<div class="row">
+				<img class="imgUser img-thumbnail" src="{% static 'main_app/assets/images/Katherine_Philippines.png' %}">
+			</div>
+			<div class="row ">	
+					<p><small class="" style="font-size: .875rem;"> <i class="fas fa-quote-left qoute1"></i> Such a great tool to use. Moving quotes can be hectic to get and schedule, unpakt is seamless and easy to use.
+						<i class="fas fa-quote-right qoute1"></i>
+						</small>
+					</p>
+			</div>
+			<div class="row">
+				<h6 class="font-weight-bold">NY MI Capucine M.</h6>
+			</div>	
+		</div>
+		<div class="col-lg-2 col-md-3 col-sm-4">
+			<a href="" style="cursor: pointer;"><img src="{% static 'main_app/assets/images/Yelp.png' %}"></a>
+			<a href=""style="cursor: pointer;"><img src="{% static 'main_app/assets/images/business.png' %}"></a>
+			<a href=""style="cursor: pointer;"><img src="{% static 'main_app/assets/images/A+.png' %}"></a>
+			<h6 class="mt-2"><small><span class="dark-yellow-color">4.5/5</span><span class="text-muted">- 1,021 Reviews</span> </small></h6>
+		</div>
+	    </section>
+	 	<!-- steps starts -->
+	 	<div>
+	    	<div class="row justify-content-center" >
+				<div class="col-xl-9  col-lg-10 col-12 b-b-dark-yellow">
+					<div class="row justify-content-center">
+			    		<div class="col-md-6  col-12 pb-4 b-r-dark-yellow padding-xs">
+			    			<div class="feature-header reddish-color">
+			    				<h3 class="font-weight-bold"><img src="{% static 'main_app/assets/images/huge.png' %}"> Huge savings</h3>
+			    				<p class="feature-sub-title">100% price and service guarantee</p>
+			    			</div>
+			    			<ul class="features-sub-list dark-yellow-color">
+			    				<li>No move day surprises, no hidden fees.</li>
+			    				<li>Best prices. Moving companies are competing over your move.</li>
+			    				<li>Save time - Avoid confusion - Control your move.</li>
+			    			</ul>
+			    		</div>	
+			    		<div class="col-md-6  col-12 pb-4 padding-xs pl-4">
+			    			<div class="float-right float-respon">
+				    			<div class="feature-header reddish-color">
+			    				<h3 class="font-weight-bold"><img src="{% static 'main_app/assets/images/payment.png' %}">Payment Protection</h3>
+			    				<p class="feature-sub-title">pay through Unpakt and be protected</p>
+			    			</div>
+			    			<ul class="features-sub-list dark-yellow-color">
+			    				<li>You don't pay the movers directly. We pay the movers only 7 days after your move is completed.</li>
+			    				<li>Update your inventory even after you book - Payment is due only 2 days before your move.</li>
+			    				<li>Moving price is based on your inventory. You'll only pay for what you end up moving.</li>
+			    			</ul>
+			    			</div>
+			    		</div>
+		    		</div>
+	    		</div>
+	    	</div>
+	    	<div class="row justify-content-center" >
+				<div class="col-xl-9 col-lg-10 col-12">
+					<div class="row justify-content-center">
+			    		<div class="col-md-6  col-12 pt-4 b-r-dark-yellow padding-xs">
+			    			<div class="feature-header reddish-color">
+			    				<h3 class="font-weight-bold"><i class="fas fa-award mr-2"></i> Insured & licensed  moving <span>companies</span> </h3>
+			    				<p class="feature-sub-title">we verify our moving companies so you don't have to</p>
+			    			</div>
+			    			<ul class="features-sub-list dark-yellow-color">
+			    				<li>Unpakt hand picked 600 moving companies out of thousands that applied.</li>
+			    				<li>We verify the licenses, insurance, and reviews of every moving company. Credentials are available for you to review.</li>
+			    				<li>All moving companies are obligated to honor your guaranteed price and to provide an All inclusive Package.</li>
+			    			</ul>
+			    		</div>	
+
+			    		<div class="col-md-6 col-12 pt-4 padding-xs">
+			    			<div class="float-right float-respon">
+				    			<div class="feature-header reddish-color">
+			    				<h3 class="font-weight-bold"><i class="fas fa-headset mr-2"></i> Live customer support</h3>
+			    				<p class="feature-sub-title">we are with you every step of the way</p>
+			    			</div>
+			    			<ul class="features-sub-list dark-yellow-color">
+			    				<li>Moving is stressful enough. We believe in top notch service. Live chat - Live calls - Toll free - 7 days a week.</li>
+			    				<li>Unpakt's process has solved the problems you didn't even know exist. We are here to make moving easy and safe.</li>
+			    				<li>Questions? Need some help? Call us at: 855-286-7258</li>
+			    			</ul>
+			    			</div>
+			    		</div>
+		    		</div>
+	    		</div>
+	    	</div>
+	    </div>
+	    	<!-- steps ends -->
+
+
+	    <!-- Carousel Starts -->
+
+<div class="container pt-5">
+<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+
+ <!-- <div class="carousel-item active">
+      <img src="la.jpg" alt="Los Angeles" width="1100" height="500">
+      <div class="carousel-caption">
+        <h3>Los Angeles</h3>
+        <p>We had such a great time in LA!</p>
+      </div>   
+    </div>
+ -->
+
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="{% static 'main_app/assets/images/slide1.png' %}"
+        alt="First slide">
+        <div class="carousel-caption reddish-color">
+        <h3 class="font-weight-bold">How Moving With RentEase Works</h3>
+        <p>Book Your Move in minutes</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="{% static 'main_app/assets/images/slide2.png' %}"
+        alt="Second slide">
+      <div class="carousel-caption reddish-color">
+        <h3 class="font-weight-bold">How Moving With RentEase Works</h3>
+        <p>Book Your Move in minutes</p>
+      </div>  
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="{% static 'main_app/assets/images/slide3.png' %}"
+        alt="Third slide">
+      <div class="carousel-caption reddish-color">
+        <h3 class="font-weight-bold">How Moving With RentEase Works</h3>
+        <p>Book Your Move in minutes</p>
+      </div>  
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="{% static 'main_app/assets/images/slide4.png' %}"
+        alt="Fourth slide">
+      <div class="carousel-caption reddish-color">
+        <h3 class="font-weight-bold">How Moving With RentEase Works</h3>
+        <p>Book Your Move in minutes</p>
+      </div>  
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+
+<div class="options">
+  <div class="row">
+    <div class="col-sm p-md-5 p-4 my-option" id="op1">
+      		<h4><span class="num-badge">1</span> Rooms</h4>
+      		<p>Choose your room using our easy planner. You can make changes any time and see exactly how much it will cost to move each room.</p>
+    </div>
+    <div class="col-sm p-md-5 p-4 my-option" id="op2" style="">
+      		<h4><span class="num-badge">2</span> Compare</h4>
+      		<p>Choose your room using our easy planner. You can make changes any time and see exactly how much it will cost to move each room.</p>
+    </div>
+  </div>
+  <div class="row">
+  	<div class="col-sm p-md-5 p-4 my-option" id="op3">
+      		<h4><span class="num-badge">3</span> Book</h4>
+      		<p>Book your move to lock your price. Make changes even after you book. Pay through RoomMate only 2 business days before your move. Cancel for free before then.</p>
+    </div>
+    <div class="col-sm p-md-5 p-4 my-option" id="op4">
+      		<h4><span class="num-badge">4</span> Move</h4>
+      		<p>Relax. Unpakt will handle payments so you don't need to worry about surprises on your move day. All moves include an all-inclusive moving package.</p>
+    </div>
+  </div>
+</div>
+
+
+</div>
+	    <!-- Carousel ends -->
+
+<!-- news section starts -->
+<div class="row justify-content-center mt-5 pb-5">
+	<div class="col-lg-10 col-md-11">
+		<h4 class="reddish-color pb-4 b-b-groove">RentEase in the <span class="font-weight-bold">News</span></h4>
+		<div class="text-center pt-4 pb-4 b-b-groove">
+			<img src="{% static 'main_app/assets/images/tnw.png' %}" class="mr-lg-5 mr-md-4">
+			<img src="{% static 'main_app/assets/images/tech-crunch.png' %}" class="mr-lg-5 mr-md-4">
+			<img src="{% static 'main_app/assets/images/cnbc.png' %}" class="mr-lg-5 mr-md-4">
+			<img src="{% static 'main_app/assets/images/forbs.png' %}" class="mr-lg-5 mr-md-4">
+			<img src="{% static 'main_app/assets/images/cnn.png' %}" class="mr-lg-5 mr-md-4">
+		</div>
+	</div>
+</div>
+<!-- news section ends -->
+
+<!-- moving tips row starts -->
+<section id="tips" class="row bg-white pt-5 pb-5 justify-content-center mt-5">
+	<div class="col-lg-10 col-md-11">
+		<h5 class="reddish-color pb-4">Best Moving <span class="font-weight-bold">Tips and Guides</span></h5>
+		<div class="row">
+			<div class="col-md-3 col-sm-6 col-12">
+				<div class="card border-0" style="width:100%;">
+				  <img class="card-img-top" src="{% static 'main_app/assets/images/chose-company.png' %}" alt="Card image">
+				  <div class="card-body p-1">
+				    <h6 class="card-title mb-0"><a href="" class="dark-yellow-color" style="cursor: pointer;">How to Choose a Moving Company with RentEase</a></h6>
+				    <p class="card-text dark-yellow-color"><small> All the secrets and tips for chosing a moving company...</small></p>
+				  </div>
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-6 col-12">
+				<div class="card border-0" style="width:100%;">
+				  <img class="card-img-top" src="{% static 'main_app/assets/images/moving-timeline.png' %}" alt="Card image">
+				  <div class="card-body p-1">
+				    <h6 class="card-title mb-0"><a href="" class="dark-yellow-color" style="cursor: pointer;">Moving Timeline</a></h6>
+				    <p class="card-text dark-yellow-color"><small> Moving requires planning and preparation. If you do not plan several weeks in advance...</small></p>
+				  </div>
+				</div>
+			</div>
+			<div class="col-md-3  col-sm-6 col-12 mt-md-0 mt-4">
+				<div class="card border-0" style="width:100%;">
+				  <img class="card-img-top" src="{% static 'main_app/assets/images/savemoney.png' %}" alt="Card image">
+				  <div class="card-body p-1">
+				    <h6 class="card-title mb-0"><a href="" class="dark-yellow-color" style="cursor: pointer;">Save an average of 45% on Moving Costs</a></h6>
+				    <p class="card-text dark-yellow-color"><small> Moving doesn’t have to be expensive...</small></p>
+				  </div>
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-6 col-12 mt-md-0 mt-4">
+				<div class="card border-0" style="width:100%;">
+				  <img class="card-img-top" src="{% static 'main_app/assets/images/moving-mistakes.png' %}" alt="Card image">
+				  <div class="card-body p-1">
+				    <h6 class="card-title mb-0"><a href="" class="dark-yellow-color" style="cursor: pointer;">10 Biggest Moving Mistakes</a></h6>
+				    <p class="card-text dark-yellow-color"><small>Moving can be messy and complicated...</small></p>
+				  </div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- moving tips row ends -->
+<!-- Refer portion starts -->
+<section id="tell-friend" class="row justify-content-center pt-5 ">
+	<div class="col-xl-5 col-lg-7 col-md-8 text-center">
+		<h4 class="reddish-color">Refer a Friend to RentEase</h4>
+		<h4 class="font-weight-bold reddish-color">Get $20 when they Move! Your Friend will get $20 too</h4>
+		<h5 class="reddish-color mt-5">Help Spread the world that moving is save and easy through RentEase</h5>
+		<a href="#" class="btn btn-sm reddish-color mt-4 btn-tell-friend"> Tell A Friend</a>
+	</div>
+</section>
+
+<!-- Refer portion ends -->
+
+
+	</main>
+
+<img class="chat-icon" src="{% static 'main_app/assets/images/chat-icon.png' %}" alt="Chat">
+<!-- chat box starts -->
+<div id="chat-popup2" class="clearfix shadow chat-wrapper" style="display: none">
+    <div class="chat">
+      <div class="chat-header clearfix col-12">
+          <div class="chat-with col-6 d-inline">John Doe</div>
+        <img src="{% static 'main_app/assets/images/profile-chat.png' %}" alt="avatar" />
+      </div> <!-- end chat-header -->
+      
+      <div class="chat-history">
+        <ul>
+          <li class="clearfix">
+            <span class="message-data float-right">
+            	<img src="{% static 'main_app/assets/images/userChat.png' %}" alt="">              
+            </span>
+            <span class="message other-message float-right">
+              Hi Vincent, how are you? How is the project coming along?
+            </span>
+          </li>
+          
+          <li>
+            <span class="message-data">
+              <img src="assets/images/userChat.png" alt="">
+            </span>
+            <span class="message my-message">
+              Are we meeting today? Project has been already finished and I have results to show you.
+            </span>
+          </li>
+          
+          <li class="clearfix">
+            <span class="message-data float-right">
+              <img src="{% static 'main_app/assets/images/userChat.png' %}" alt="">              
+            </span>
+            <span class="message other-message float-right">
+              Well I am not sure. The rest of the team is not here yet. Maybe in an hour or so? Have you faced any problems at the last phase of the project?
+            </span>
+          </li>
+          
+          <li>
+            <span class="message-data">
+              <img src="{% static 'main_app/assets/images/userChat.png' %}" alt="">
+            </span>
+            <span class="message my-message">
+              Actually everything was fine. I'm very excited to show this to our team.
+            </span>
+          </li>
+          
+          <li>
+            <span class="message-data">
+              <img src="{% static 'main_app/assets/images/userChat.png' %}" alt="">
+            </span>
+            <i class="fa fa-circle online"></i>
+            <i class="fa fa-circle online" style="color: #AED2A6"></i>
+            <i class="fa fa-circle online" style="color:#DAE9DA"></i>
+          </li>
+          
+        </ul>
+        
+      </div> <!-- end chat-history -->
+      
+      <div class="chat-message clearfix">
+        <textarea name="message-to-send" id="message-to-send" placeholder ="Type your message" rows="1"></textarea>
+      
+        <span  class="myButton" title="" ><img src="{% static 'main_app/assets/images/btnSend.png' %}" alt="Send"></span>
+
+      </div> <!-- end chat-message -->
+      <div class="logo-div p-1">
+      	<img src="{% static 'main_app/assets/images/logo-brown.png' %}">
+      </div> <!-- end chat logo -->
+      
+    </div> 
+ </div>
+<!-- chat box ends -->
+
+
+<!--   <div class="dates">
+  <div class="start_date input-group mb-4">
+    <input class="form-control start_date" type="text" placeholder="start date" id="datepicker">
+    <div class="input-group-append">
+      <span class="fa fa-calendar input-group-text start_date_calendar" aria-hidden="true "></span>
+    </div>
+
+  </div>
+</div> -->
+		
+
+
+{% endblock contents %}
+
+{% block pagescripts %}
+<script src="{% static 'main_app/assets/js/myScript.js' %}"></script>
+<script type="text/javascript" src="{% static 'main_app/assets/js/handlebars.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'main_app/assets/js/list.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'main_app/assets/js/chatScript.js' %}"></script>
+
+
+	<script id="message-template" type="text/x-handlebars-template">
+  <li class="clearfix">
+      <span class="message-data float-right">
+              <img src="{% static 'main_app/assets/images/userChat.png' %}" alt="">
+      </span>
+    <span class="message other-message float-right">
+      {{messageOutput}}
+    </span>
+  </li>
+</script>
+
+<script id="message-response-template" type="text/x-handlebars-template">
+  <li>
+    <span class="message-data">
+      <img src="{% static 'main_app/assets/images/userChat.png' %}" alt="">
+    </span>
+    <span class="message my-message">
+      {{response}}
+    </span>
+  </li>
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/js/bootstrap-datepicker.min.js"></script>
+
+<script type="text/javascript">
+$("#startdate_datepicker").datepicker();
+$("#enddate_datepicker").datepicker();
+</script>
+
+<script type="text/javascript">
+    jQuery(document).ready(function($) {
+        $("#move-to-storage").click(function(e) {
+        $("#out-date").hide();
+        });
+
+        $("#move-short-time").click(function(e) {
+            $("#out-date").show();
+        });
+    });
+</script>
+{% endblock pagescripts %}

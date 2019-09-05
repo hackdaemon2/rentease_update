@@ -1,0 +1,316 @@
+html,body{
+width: 100%;
+height: 100%;
+/*font-family: 'Raleway';font-size: 22px;*/
+}
+.row{
+  margin-right: 0px !important; margin-left: 0px !important;
+}
+
+/*navbar*/
+
+#navbar-find-roommate{
+background-color: black; padding: 1.5em 5em;
+}
+
+#navbar-find-roommate .navbar-brand img{
+width:150px;
+}
+ #custom-ul .nav-item a{
+  color:rgb(244,18,76);
+  margin-right: 1em ;
+  font-weight: bold;
+}
+.nav-active{
+  color:#fff !important;
+  text-decoration: underline !important;
+}
+.nav-top-margin{
+  margin-top: 9.1rem !important;
+}
+
+
+
+#seacrh-input{
+  list-style: none;
+}
+#seacrh-input .form-group{
+  margin-bottom: 0rem !important;
+}
+.has-search ::placeholder {
+  color: rgb(244,18,76);
+}
+.has-search input{
+  border-radius: 50px; color: rgb(244,18,76);
+}
+
+.has-search .form-control {
+    padding-left: 2.375rem;
+    padding-right: 1rem !important;
+}
+
+.has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+}
+#custom-ul .dropdown-menu{
+  background-color: rgb(249,223,116); padding: .5em;
+}
+#custom-ul .dropdown-item{
+  background-color: #fff;color: rgb(244,18,76);
+}
+.btn-signup-roommate{
+  background-color: rgb(249,223,116);color: rgb(244,18,76);
+}
+ /*go to form  row starts*/
+ .btn-go-form{
+  background-color:  rgb(244,18,76); padding: .5em 5em;
+ }
+ 
+ /*Community section starts*/
+ section.roommate {
+  background-position: center;
+  background-image: url("../images/banner-people.jpg");
+  background-size: cover;
+  min-height:50vh;
+}
+
+ .roommate{
+  margin-top: 5em; margin-bottom: 5em;
+ }
+ .fade-layer{
+  background-color: black; height: 50vh;width: 100%; opacity: .7;
+ }
+ .fade-layer span{
+  color: rgb(255,218,68);
+ }
+
+
+
+
+
+/*Find roommate form starts*/
+#find-form-container
+{
+  padding: 3em; background-color: rgb(244,18,76); min-height: 100vh;
+}
+
+#find-form .form-control{
+  color: rgb(244,18,76) !important;
+}
+ .custom-place  ::placeholder {
+  color: rgb(244,18,76);
+}
+#find-form .input-group-text{
+  background-color: #fff !important;color:rgb(244,18,76);
+}
+.btn-search{
+  background-color: rgb(249,223,116);color: rgb(244,18,76); padding: .5em 3.5em; 
+}
+
+/*colors*/
+.yellowish-color{
+  color: rgb(249,223,116) !important;
+}
+.dark-yellow-color{
+  color:#e4cd69 !important;
+}
+.dark-reddish{
+  color: rgb(244,18,76);
+}
+
+
+/*footer*/
+#footer{
+  padding: 3em 4em;
+  background-color: #e4cd69;
+}
+#footer h5{
+   color: #6c757d;
+   font-weight: lighter;
+}
+.tumblr-icon{
+  margin-right: 2em;
+  margin-left: 2em;
+}
+
+.fixed-top{
+  z-index: 8;
+}
+/*Login phase*/
+.header-overlay2{
+  position: absolute;
+  top: 16%;
+  left: 0;
+  right:0;
+  overflow: hidden; 
+  z-index: 10;
+}
+.logins-container{
+  width:400px; height:auto;
+
+  background-image: linear-gradient(to bottom right, rgb(244,18,76) 60%, yellow);
+  background-image: -moz-linear-gradient(to bottom right, rgb(244,18,76) 60%, yellow); 
+  background-image: -webkit-linear-gradient(to bottom right, rgb(244,18,76) 60%, yellow); 
+  background-image: -o-linear-gradient(to bottom right, rgb(244,18,76) 60%, yellow);  
+  background-image: -ms-linear-gradient(to bottom right, rgb(244,18,76) 60%, yellow); 
+
+  padding: 1em 2em; display: none; 
+  overflow: hidden;
+}
+
+.header-mt{
+  margin-top: 4em;
+}
+.login-body-mb{
+  margin-bottom: 4em;
+}
+
+/*submit form */
+.submit-form-roommate{
+  background-color: rgb(255, 255, 255,.8);
+  width:100%;
+   position: absolute;
+   top:0;
+   min-height: 100%;
+}
+.submit-form-roommate i{
+ color: rgb(0,255,34);
+}
+
+
+
+
+
+/*Responsive*/
+/*// Large devices (desktops, less than 1200px)*/
+@media (max-width: 1199.98px) { 
+
+#navbar-find-roommate {
+    padding: 1.5em 1em;
+}
+.header-overlay2 {
+    top: 8%;
+}
+
+
+}
+/*// Medium devices (tablets, less than 992px)*/
+@media (max-width: 991.98px) {
+
+.navbar-toggler{
+  background-color:  rgb(214,19,91) !important;
+ }
+#seacrh-input .form-group {
+    margin-top: 1rem;
+    margin-bottom: .5rem !important;
+}
+.has-search {
+      width: 250px;
+}
+#custom-ul .nav-item a {
+    margin-right: .5em;
+    font-size: 1.4em;
+}
+ #custom-ul .dropdown-menu {
+    width: 240px;
+}
+.btn-signup-roommate{
+  width: 120px;
+}
+#steps img{
+  width: 100%;
+}
+#find-form-container {
+    padding: 2em
+  }
+}
+
+
+/*// Small devices (landscape phones, less than 768px)*/
+@media (max-width: 767.98px) { 
+
+.welecome-row h1{
+  font-size: 2em;
+}
+.roommate h6{
+  font-size: .9em;
+}
+#find-form-container {
+    padding: 4em;
+}
+#find-form-container h1{
+  font-size: 2em;
+}
+#footer {
+    padding: 2em 1em;
+}
+
+
+}
+
+/*// Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+.nav-top-margin {
+    margin-top: 7.1rem !important;
+}
+ 
+    #navbar-find-roommate {
+    padding: 1.5em 1em 1em 1em!important;
+}
+#navbar-find-roommate .navbar-brand img {
+    width: 100px !important;
+}
+.navbar-toggler {
+    padding: .0rem .25rem;
+    font-size: 1rem;
+}
+
+
+.logins-container {
+    /* z-index: 2; */
+    width: 300px;
+    padding: 1em;
+}
+.welecome-row h1 {
+    font-size: 1.2em;
+}
+.welecome-row h5{
+  font-size: 1rem;
+}
+.roommate i{
+  font-size: 2em;
+}
+.roommate h6 {
+    font-size: .5em;
+}
+#find-form-container {
+    padding: 2em .5em;
+}
+#footer h5 {
+    font-size: .8em;
+}
+#footer h6 {
+    font-size: .9em;
+}
+.tumblr-icon-head-p{
+ padding-left: 0px !important;
+ padding-right: 0px !important;
+ text-align: center !important;
+}
+.tumblr-icon {
+    margin-right: 1em;
+    margin-left: 1em;
+}
+.row-custom h4 {
+    font-size: 1em;
+}
+
+ }

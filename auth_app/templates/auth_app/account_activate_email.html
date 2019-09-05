@@ -1,0 +1,8 @@
+{% autoescape off %}
+<h3>Rentease Account Activation</h3>
+<p>
+Hello {{ user.first_name | title }}! Please click on the link below to confirm your registration. <br />
+
+http://{{ domain }}{% url 'auth_app:activate' uidb64=uid token=token %}
+</p>
+{% endautoescape %}

@@ -1,0 +1,331 @@
+html,body{
+width: 100%;
+height: 100%;
+/*font-family: 'Raleway';font-size: 22px;*/
+}
+
+.row{
+  margin-right: 0px !important; margin-left: 0px !important;
+}
+
+
+
+/*navbar*/
+#navbar-cleaning{
+  background-color: black !important; padding: 1.5em 6em !important;
+}
+#navbar-cleaning .navbar-brand img{
+  width:150px !important;
+}
+.nav-active{
+  color:#fff !important;
+  text-decoration: underline !important;
+}
+.nav-top-margin{
+  margin-top: 6.1rem;
+}
+
+#seacrh-input{
+  list-style: none;
+}
+#seacrh-input .form-group{
+  margin-bottom: 0rem !important;
+}
+.has-search input{
+  border-radius: 50px; color: rgb(244,18,76);
+}
+
+.has-search .form-control {
+    padding-left: 2.375rem;
+    padding-right: 1rem !important;
+}
+.has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+}
+.has-search ::placeholder {
+  color: rgb(244,18,76);
+}
+
+ #custom-ul .nav-item a{
+  color:rgb(244,18,76);
+  margin-right: 1em ;
+  font-weight: bold;
+}
+#custom-ul .dropdown-menu{
+  background-color: rgb(249,223,116); padding: .5em;
+}
+#custom-ul .dropdown-item{
+  background-color: #fff !important; color: rgb(244,18,76);
+}
+
+/*Menu nav*/
+#landlord-menu{
+  background-color: rgb(244,18,76);
+}
+
+#landlord-menu .width-15{
+  width: 15%;
+   border-right: 2px solid #e4cd69;
+}
+#landlord-menu .width-14{
+ width: 14%; border-right: 2px solid #e4cd69;
+}
+
+.active-menu{
+  background-color: #fff !important;
+  border-bottom: 1px solid rgb(244,18,76);
+ 
+}
+.active-menu-text{
+    color: #e4cd69 !important;
+    border-bottom: 2px solid;
+    padding-bottom: .3em;
+}
+
+#main{
+  padding-bottom: 10rem !important;
+}
+
+
+/*Dashbpard cards*/
+#dashboard-card .card{
+   background-image: linear-gradient(to   right bottom, rgb(244,18,76) 55% , yellow  ) !important;
+   width:280px; height: 300px;
+}
+#dashboard-card .card a{
+  background-color: rgb(249,223,116); padding: .5em 1em;
+}
+#dashboard-card .card .rent-icon{
+  padding: .6em .7em;background-color: #fff;  color: rgb(244,18,76); border-radius: 100%; margin-top: 100%;
+} 
+#dashboard-card .card .home-icon{
+ padding: .6em .5em;background-color: #fff;  color: rgb(244,18,76); border-radius: 100%; margin-top: 100%;
+} 
+#dashboard-card .card .money-icon{
+ padding: .6em .5em;background-color: #fff;  color: rgb(244,18,76); border-radius: 100%; margin-top: 100%;
+} 
+
+/*colors*/
+.yellowish-color{
+  color: rgb(249,223,116) !important;
+}
+.dark-yellow-color{
+  color:#e4cd69 !important;
+}
+.reddish-color{
+  color: rgb(244,18,76) !important;
+  
+}
+
+
+
+/*footer*/
+#footer{
+  background-color: #e4cd69;
+  padding: 3em 4em;
+}
+#footer h5{
+   color: #6c757d;
+   font-weight: lighter;
+}
+.tumblr-icon{
+  margin-right: 2em;
+  margin-left: 2em;
+}
+
+/*Modal*/
+
+#profile-modal .modal-body h1{
+  font-size: 3em;
+}
+.btn-edit-profile{
+  background-color: rgb(244,18,76); padding: .5em 2em;
+}
+
+
+
+
+/*reponsive*/
+
+/*// Large devices (desktops, less than 1200px)*/
+@media (max-width: 1199.98px) { 
+#navbar-cleaning {
+    padding: 1.5em 2em !important;
+}
+#landlord-menu a{
+  font-size: 1rem;
+}
+.has-search {
+    width: 250px;
+}
+#main {
+    padding-bottom: 17.5rem !important;
+}
+
+ }
+/*// Medium devices (tablets, less than 992px)*/
+@media (max-width: 991.98px) { 
+
+
+#custom-ul .nav-item a {
+    margin-right: .5em;
+    font-size: 1.4em;
+}
+
+#main {
+    padding-bottom: 4.5rem !important;
+}
+#landlord-menu .width-15 {
+    width: 16%;
+}
+#landlord-menu .width-14 {
+    width: 20%;
+}
+
+
+#landlord-menu a {
+    font-size: .9rem;
+}
+#dashboard-card .card{
+   width:100%;
+}
+/*modal*/
+.modal-header h6 a{
+  font-size: 1.5em;
+}
+
+}
+/*// Small devices (landscape phones, less than 768px)*/
+@media (max-width: 767.98px) { 
+
+#navbar-cleaning {
+    padding: 1.5em 1em !important;
+}
+
+#landlord-menu a {
+    font-size: .9rem;
+}
+#seacrh-input .form-group {
+    margin-bottom: 1rem !important;
+}
+
+#dashboard-card .card{
+   width:280px;
+}
+
+#footer{
+  padding: 2em 1em;
+} 
+.respon-h4{
+  font-size: 1.4em;
+}
+.navbar-toggler{
+  background-color:  rgb(214,19,91) !important;
+ }
+
+
+#landlord-menu button i {
+    width: 1rem;
+    height: 1rem;
+    font-size: initial;
+}
+#landlord-menu{
+  padding-right: 2rem !important;
+}
+#landlord-menu a {
+    font-size: 1.2rem;
+}
+#landlord-menu .width-15 {
+    width: 25%;
+    border-right: 2px solid #e4cd69;
+}
+#landlord-menu .width-14 {
+    width: 100% !important;
+    border-right:none;
+}
+#landlord-menu .width-15-respon {
+    width: 100%;
+    text-align: center !important;
+}
+
+
+
+ }
+
+
+/*// Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) { 
+
+.nav-top-margin {
+    margin-top: 4.7rem;
+}
+
+
+#navbar-cleaning {
+    padding: 1.5em 1em 1em 1em!important;
+}
+#navbar-cleaning .navbar-brand img {
+    width: 100px !important;
+}
+#navbar-cleaning .navbar-toggler {
+    padding: .25rem .5rem;
+    font-size: 1rem;
+}
+#landlord-menu {
+    padding-right: 1rem !important;
+}
+#landlord-menu .width-15 {
+    width: 35%;
+    border-right: 2px solid #e4cd69;
+}
+#landlord-menu .width-15-respon {
+    width: 100% !important;
+    text-align: center !important;
+}
+#landlord-menu .width-14 {
+    width: 100%;
+     border-right: none; 
+}
+#landlord-menu a {
+    font-size: 1rem;
+}
+#dashboard-card .card{
+   width:100%;
+}
+
+
+#navbar-cleaning {
+    padding: 1em 1em !important;
+}
+#footer h5{
+  font-size: .8em;
+ }
+ #footer h6{
+  font-size: 1em;
+ }
+ .tumblr-icon-head-p{
+ padding-left: 0px !important;
+ padding-right: 0px !important;
+ text-align: center !important;
+}
+.tumblr-icon{
+  margin-left: 1em;
+  margin-right: 1em;
+}
+.row-custom h4{
+  font-size: 1em;
+}
+.modal-body h5{
+  font-size: .8em;
+}
+ }
+
+

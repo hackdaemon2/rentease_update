@@ -1,0 +1,339 @@
+html,body{
+width: 100%;
+height: 100%;
+/*font-family: 'Raleway';font-size: 22px;*/
+}
+
+.row{
+  margin-right: 0px !important; margin-left: 0px !important;
+}
+
+
+/*navbar*/
+#navbar-cleaning{
+  background-color: black !important; padding: 1.5em 5em !important;
+}
+#navbar-cleaning .navbar-brand img{
+  width:150px !important;
+}
+.nav-active{
+  color:#fff !important;
+  text-decoration: underline !important;
+}
+.nav-top-margin{
+  margin-top: 6.1rem;
+}
+
+
+
+#seacrh-input{
+  list-style: none;
+}
+#seacrh-input .form-group{
+  margin-bottom: 0rem !important;
+}
+.has-search input{
+  border-radius: 50px; color: rgb(244,18,76);
+}
+
+.has-search .form-control {
+    padding-left: 2.375rem;
+    padding-right: 1rem !important;
+}
+.has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+}
+.has-search ::placeholder {
+  color: rgb(244,18,76);
+}
+
+ #custom-ul .nav-item a{
+  color:rgb(244,18,76);
+  margin-right: 1em ;
+  font-weight: bold;
+}
+#custom-ul .dropdown-menu{
+  background-color: rgb(249,223,116); padding: .5em;
+}
+#custom-ul .dropdown-item{
+  background-color: #fff !important; color: rgb(244,18,76);
+}
+#moving-form ::placeholder{
+  color: grey !important;
+}
+#moving-form .form-control{
+  color: rgb(244,18,76) !important;
+}
+
+/*colors*/
+.yellowish-color{
+  color: rgb(249,223,116) !important;
+}
+.dark-yellow-color{
+  color:#e4cd69 !important;
+}
+.reddish-color{
+  color: rgb(244,18,76) !important;
+}
+
+
+
+
+/*community section*/
+
+.service{
+  margin-bottom: 5em;
+}
+
+section.services{
+  background-position: center;
+  background-image: url("../images/cleaning.jpg");
+  background-size: cover;
+  min-height:85vh;
+}
+.order-row{
+  margin-top: 5em;
+}
+#order-form{
+  position: absolute;top: 60%;left: 35%; z-index: 1;
+}
+.order-form-wrapper{
+  background-color: rgb(244,18,76); padding: 3em 3em 1em 3em; width: 400px;
+}
+#order-form .input-group{
+  padding-right: 0px !important;
+}
+#order-form .input-group-text{
+  background-color: #fff !important;color:rgb(176,152,24) !important;padding-right: 0px !important; 
+}
+.btn-request{
+background-color: rgb(249,223,116); color: rgb(244,18,76); width: 100% ; padding: .5em;
+}
+
+/*main*/
+#main{
+  padding-left: 0px; padding-right: 0px; margin-top: 20em; margin-bottom: 5em;
+}
+
+/*profile popup*/
+#profile-popup .modal-lg{
+   max-width: 1000px !important;
+}
+#profile-popup .modal-content{
+   padding: 4em 8em !important;
+}
+#profile-popup .modal-header{
+   border-bottom: none !important;
+}
+.user-info h1{
+  font-size: 3em;
+}
+.user-city{
+  border-right: 1px solid; padding-right: 1em;
+}
+.user-contact{
+  padding-left: 1em;
+}
+.record-styling{
+  border-top: 1px solid rgb(244,18,76); border-bottom: 1px solid rgb(244,18,76); 
+}
+#profile-popup .modal-footer button{
+   background-color: rgb(244,18,76); padding: .5em 2em;
+}
+.btn-edit-profile{
+  background-color: rgb(244,18,76); padding: .5em 2em;
+}
+
+
+
+/*footer*/
+
+#footer{
+  background-color: #e4cd69;
+  padding: 3em 4em;
+}
+#footer h5{
+   color: #6c757d;
+   font-weight: lighter;
+}
+
+.tumblr-icon{
+  margin-right: 2em;
+  margin-left: 2em;
+}
+
+#find-form .form-control{
+	color: rgb(244,18,76) !important;
+}
+ .custom-place  ::placeholder {
+  color: rgb(244,18,76);
+}
+
+.para-row h2{
+  color: rgb(244,18,76);
+}
+
+.para-row p{
+  padding-left: 10px;
+}
+
+
+
+
+
+
+
+
+/*Responsive*/
+
+
+/*// Large devices (desktops, less than 1200px)*/
+
+@media (max-width: 1199.98px) { 
+#navbar-cleaning {
+    padding: 1.5em 2em !important;
+}
+.order-row {
+    margin-top: 18em;
+}
+#order-form {
+    top: 70%;
+    left: 30%;
+}
+ }
+
+/*// Medium devices (tablets, less than 992px)*/
+@media (max-width: 991.98px) { 
+.navbar-toggler{
+  background-color:  rgb(214,19,91) !important;
+ }
+#seacrh-input .form-group {
+    margin-top: 1rem;
+    margin-bottom: .5rem !important;
+}
+.has-search {
+      width: 250px;
+}
+#custom-ul .nav-item a {
+    margin-right: .5em;
+    font-size: 1.4em;
+}
+ #custom-ul .dropdown-menu {
+    width: 240px;
+}
+
+#order-form {
+    top: 65%;
+    left: 25%;
+}
+/*modal*/
+
+.modal-header h6 a{
+  font-size: 1.5em;
+}
+ }
+
+/*// Small devices (landscape phones, less than 768px)*/
+@media (max-width: 767.98px) { 
+
+.nav-top-margin {
+    margin-top: 6.15rem;
+}
+
+
+#footer{
+  padding: 2em 1em;
+} 
+.respon-h4{
+  font-size: 1.4em;
+}
+.navbar-toggler{
+  background-color:  rgb(214,19,91) !important;
+ }
+.order-row {
+    margin-top: 8em;
+}
+.order-row h1{
+    font-size: 2rem;
+}
+#order-form {
+    top: 60%;
+    left: 15%;
+}
+.tumblr-icon{
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+}
+
+/*// Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+
+   #navbar-cleaning {
+    padding:  1em !important;
+}
+#navbar-cleaning .navbar-brand img {
+    width: 100px !important;
+}
+.navbar-toggler {
+    padding: .0rem .25rem;
+    font-size: 1rem;
+}
+.nav-top-margin {
+    margin-top: 4.7rem;
+}
+
+
+
+#footer h5{
+  font-size: .8em;
+ }
+ #footer h6{
+  font-size: .9em;
+ }
+ .tumblr-icon-head-p{
+ padding-left: 0px !important;
+ padding-right: 0px !important;
+ text-align: center !important;
+}
+.tumblr-icon{
+  margin-left: 1em;
+  margin-right: 1em;
+}
+.row-custom h4{
+  font-size: 1em;
+}
+.order-form-wrapper {
+    background-color: rgb(244,18,76);
+    padding: 2em 1em 1em 1em;
+    width: 300px;
+}
+#order-form {
+    top: 60%;
+    left: 3%;
+}
+.order-row {
+    margin-top: 2em;
+}
+.order-row h1 {
+    font-size: 1.5rem;
+}
+.order-row h4 {
+    font-size: 1.1rem;
+}
+
+ }
+
+
+
+
+

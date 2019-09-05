@@ -1,0 +1,449 @@
+html,body{
+width: 100%;
+height: 100%;
+/*font-family: 'Raleway';font-size: 22px;*/
+}
+
+.row{
+  margin-right: 0px !important; margin-left: 0px !important;
+}
+
+/*colors*/
+.yellowish-color{
+  color: rgb(249,223,116) !important;
+}
+.dark-yellow-color{
+  color:#e4cd69 !important;
+}
+.reddish-color{
+  color: rgb(244,18,76) !important;  
+}
+
+.hard-brown{
+  color:#c8ac25;
+}
+
+
+/*navbar*/
+.nav-top-margin{
+  margin-top: 6.1rem;
+}
+#navbar-cleaning{
+  background-color: black !important; padding: 1.5em 6em !important;
+}
+#navbar-cleaning .navbar-brand img{
+  width:150px !important;
+}
+.nav-active{
+  color:#fff !important;
+  text-decoration: underline !important;
+}
+#seacrh-input{
+  list-style: none;
+}
+#seacrh-input .form-group{
+  margin-bottom: 0rem !important;
+}
+.has-search input{
+  border-radius: 50px; color: rgb(244,18,76);
+}
+
+.has-search .form-control {
+    padding-left: 2.375rem;
+    padding-right: 1rem !important;
+}
+.has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+}
+.has-search ::placeholder {
+  color: rgb(244,18,76);
+}
+
+ #custom-ul .nav-item a{
+  color:rgb(244,18,76);
+  margin-right: 1em ;
+  font-weight: bold;
+}
+#custom-ul .dropdown-menu{
+  background-color: rgb(249,223,116); padding: .5em;
+}
+#custom-ul .dropdown-item{
+  background-color: #fff !important; color: rgb(244,18,76);
+}
+
+#navbar-cleaning ul li.active > a, a[aria-expanded="true"] {
+    background: none !important;
+}
+
+/*Menu nav*/
+.active-menu{
+  background-color: #fff !important;
+  border-bottom: 1px solid rgb(244,18,76);
+ 
+}
+
+.active-menu-text{
+    color: #e4cd69 !important;
+    border-bottom: 2px solid;
+    padding-bottom: .3em;
+}
+
+
+ .image-upload > input
+{
+    display: none;
+}
+
+
+
+/*main content*/
+
+/*table*/
+#status-table{
+  margin-top: 6rem;
+}
+
+#status-table .table-wrappper{
+  border: 2px solid rgb(215,215,215); border-radius: 3px;
+}
+
+#status-table .head-table{
+  width: 96%
+}
+#status-table .head-table thead{
+ background-color: rgb(244,18,76);
+}
+#status-table .th-apartment{
+  width: 20%;
+}
+#status-table .th-location{
+  width: 20%;
+}
+#status-table .th-application{
+  width:25%;
+}
+#status-table .body-table{
+  border-collapse:separate; 
+  border-spacing: 1em; 
+}
+#status-table .btn-reserve{
+  cursor: pointer;
+}
+#status-table .btn-reserve span{
+  border-bottom: 1px solid;
+}
+#status-table .btn-upload-form{
+  cursor: pointer;
+}
+#status-table .btn-upload-form span{
+  border-bottom: 1px solid;
+}
+
+
+
+#status-table tbody tr td{
+  border: 2px solid rgb(215,215,215);
+  color: #c8ac25;
+}
+#status-table .btn-accepted {
+    padding: .3rem 1rem;
+    color: rgb(244,18,76);
+    background-color: rgb(0,255,34);
+}
+#status-table .btn-incomplete {
+    padding: .3rem .8rem;
+    color: #fff;
+    background-color: rgb(244,18,76);
+}
+
+
+/*reverse popup*/
+#reserve-popup{
+  background-color: rgb(242,242,242);position: fixed;top:0;right:0;width: 78%;z-index: 2;overflow-y: scroll;top:0;bottom: 0;
+}
+#reserve-popup .dash{
+  position: relative; bottom: 7px; font-size: 2em;
+}
+#reserve-popup .check-out{
+  border-bottom: 2px solid rgb(172,147,44); padding-bottom: .5em;
+}
+.billing-detail-wrapper{
+  padding: 2em 3em;
+}
+
+.billing-detail-wrapper .btn-payment{
+  width: 100%; background-color:  rgb(244,18,76); border-radius: 10px; padding: .5em;
+}
+#reserve-right .card{
+  width:100%; margin-top: 7em; border-radius: 5px;
+}
+
+
+/*guranter form*/
+.guranter-container{
+  width:400px; height:auto;
+
+  background-image: linear-gradient(to bottom right, rgb(244,18,76) 60%, yellow);
+  background-image: -moz-linear-gradient(to bottom right, rgb(244,18,76) 60%, yellow); 
+  background-image: -webkit-linear-gradient(to bottom right, rgb(244,18,76) 60%, yellow); 
+  background-image: -o-linear-gradient(to bottom right, rgb(244,18,76) 60%, yellow);  
+  background-image: -ms-linear-gradient(to bottom right, rgb(244,18,76) 60%, yellow); 
+
+  padding: 1em 2em; display: none; 
+  overflow: hidden;
+  position:fixed;z-index: 3;right:0;top:12.91%;height: 84.9%;
+
+}
+
+#btn-back-upload-form{
+  cursor: pointer;
+}
+#btn-back-upload-form span{
+ text-decoration: underline;
+}
+.upload-wrapper{
+  margin-top: 4rem;
+}
+.upload-wrapper span i{
+  font-size: 1.5rem;
+}
+
+
+
+/*footer*/
+#footer{
+  background-color: #e4cd69;
+  padding: 3em 4em;
+}
+#footer h5{
+   color: #6c757d;
+   font-weight: lighter;
+}
+.tumblr-icon{
+  margin-right: 2em;
+  margin-left: 2em;
+}
+
+/*Modal*/
+
+#profile-modal .modal-body h1{
+  font-size: 3em;
+}
+.btn-edit-profile{
+  background-color: rgb(244,18,76); padding: .5em 2em;
+}
+
+
+
+
+/*reponsive*/
+
+/*// Large devices (desktops, less than 1200px)*/
+@media (max-width: 1199.98px) { 
+#navbar-cleaning {
+    padding: 1.5em 2em !important;
+}
+#profile-form-container h5{
+  font-size: 2rem;
+ }
+#status-table .th-apartment {
+    width: 23%;
+}
+.table thead th {
+    font-size: .8rem !important;
+}
+#status-table tbody tr td {
+    font-size: .77rem;
+}
+#status-table .th-location {
+    width: 15%;
+    text-align: left !important;
+}
+.billing-detail-wrapper {
+    padding: 2em 1em;
+}
+.payment-instruct{
+  font-size: .9rem;
+}
+
+}
+/*// Medium devices (tablets, less than 992px)*/
+@media (max-width: 991.98px) { 
+/*  .nav-top-margin {
+    margin-top: 6.25rem;
+}*/
+
+.navbar-toggler{
+  background-color:  rgb(214,19,91) !important;
+ }
+#seacrh-input .form-group {
+    margin-top: 1rem;
+    margin-bottom: .5rem !important;
+}
+.has-search {
+      width: 250px;
+}
+#custom-ul .nav-item a {
+    margin-right: .5em;
+    font-size: 1.4em;
+}
+ #custom-ul .dropdown-menu {
+    width: 240px;
+}
+#status-table tbody tr td {
+    font-size: unset !important;
+}
+.table thead th {
+    font-size: unset !important;
+}
+#status-table .th-apartment {
+    width: 24%;
+}
+#status-table .th-location {
+    width: 16%;
+}
+#status-table .th-application {
+    width: 31%;
+    text-align: left !important;
+}
+#status-table .th-action{
+  text-align: left !important;
+}
+.billing-detail-wrapper {
+    padding: 2em 0em;
+}
+#reserve-popup {
+    width: 90%;
+}
+.payment-instruct {
+    font-size: .85rem;
+}
+
+/*modal*/
+
+.modal-header h6 a{
+  font-size: 1.5em;
+}
+
+}
+/*// Small devices (landscape phones, less than 768px)*/
+@media (max-width: 767.98px) {
+/*.nav-top-margin {
+    margin-top: 6.15rem;
+} */
+
+ #custom-ul .dropdown-menu {
+   width: 240px;
+}
+#status-table {
+    margin-top: 3rem;
+}
+#content {
+    padding: 2rem 1rem !important;
+}
+#status-table .head-table {
+    width: 100%;
+}
+#status-table tbody tr td {
+    padding-bottom: 0rem;
+}
+#status-table .th-apartment {
+    width: 23%;
+    text-align: center !important;
+}
+#status-table .th-location {
+    width: 23%;
+    text-align: center !important;
+}
+#status-table .th-application {
+    width: 37%;
+    text-align: center !important;
+}
+.pt-respon{
+  padding-top: 2rem !important;
+}
+
+#footer{
+  padding: 2em 1em;
+} 
+.respon-h4{
+  font-size: 1.4em;
+}
+#reserve-right .card {
+    margin-top: 3em !important;
+}
+
+ }
+
+
+/*// Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) { 
+.nav-top-margin {
+    margin-top: 4.7rem;
+}
+  
+  #navbar-cleaning {
+    padding: 1.5em 1em 1em 1em!important;
+}
+#navbar-cleaning .navbar-brand img {
+    width: 100px !important;
+}
+.navbar-toggler {
+    padding: .0rem .25rem;
+    font-size: 1rem;
+}
+#content {
+    padding: 2rem 0rem !important;
+}
+#profile-form-container h5 {
+    font-size: 1.5rem;
+}
+#status-table .head-table {
+    width: 205% !important;
+}
+#status-table .th-apartment {
+    width: 25%;
+    text-align: center !important;
+}
+#status-table .th-application {
+    width: 35%;
+    text-align: left !important;
+}
+.head-text{
+    font-size: .63rem;
+}
+.guranter-container {
+    width: 300px;
+    }
+#footer h5{
+  font-size: .8em;
+ }
+#footer h6 {
+    font-size: .9em;
+}
+.tumblr-icon-head-p{
+ padding-left: 0px !important;
+ padding-right: 0px !important;
+ text-align: center !important;
+}
+.tumblr-icon{
+  margin-left: 1em;
+  margin-right: 1em;
+}
+.row-custom h4{
+  font-size: 1em;
+}
+.modal-body h5{
+  font-size: .8em;
+}
+ }
+
+

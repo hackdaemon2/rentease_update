@@ -1,0 +1,240 @@
+{% extends 'main_app/base.html' %}
+{% load static %}
+{% block title %}{{ title }}{% endblock %}
+{% block featured_apartments %}
+<div class="container featured-apartment mt-5">
+
+{% if unit_list %}
+<div class="owl-carousel owl-theme">
+    {% for unit in unit_list %}
+    <div class="item ">
+    	<div class="card border-0 " style="width:100%;">
+			<div style="position: relative;">
+				<img class="card-img-top " src="{% url unit.image %}" alt="Card image">
+				<a href="javascript:void(0);" class="btn btn-sm cad-btn">CAD {{ unit.price }}/month</a>						
+				<a href="{% url 'main_app:unit_details' unit.pk %}" class="btn btn-sm view-btn">View Apartment</a>
+			</div> 
+			<div class="card-body text-left">
+				<h5 class="card-title mb-0">{{ unit.type }} in {{ unit.address }}</h5>
+				<p class="card-text"> {{ unit.location__city }}, {{ unit.location__province }} </p> 
+				<h4><span class="font-weight-bold">${{ unit.price }}</span><span><small>/month</small></span></h4>
+			</div>
+			<div class="card-footer bg-white text-left d-inline">
+			    <div class="float-left  mr-5"><h6><span class="dark-reddish">Beds:</span> <span class="d-block dark-brown">{{ unit.number_of_rooms }}</span></h6></div>
+				<div class="float-left mr-5"><h6 ><span class="dark-reddish">Baths:</span> <span class="d-block dark-brown">{{ unit.number_of_bathrooms }}</span></h6></div>
+				<div class=""><h6 ><span class="dark-reddish">Area:</span> <span class="d-block yellowish-color">{{ unit.area_sq_ft }} sq.ft</span></h6></div>
+			</div>
+		</div>
+	</div>
+    {% endfor %}
+</div>
+{% else %}
+<div>
+    <p class="text-center text-bold">There are no apartments currently available for display</p>
+</div>
+{% endif %}
+</div>
+{% endblock featured_apartments %}
+{% block properties %}
+<section id="city-property" class="city-property text-center">
+           
+            <div class="container">
+           
+                <div class="row">
+           
+                    <div class="col-12 col-sm-12 col-md-12">
+           
+                        <div class="heading heading-2 text-center mb-5 pb-4">
+           
+                            <h1 class=" dark-reddish font-weight-bold"> 
+								Top Places to Live in Cananda
+							</h1>
+							<h4 class="dark-yellow-color">
+								Discover Cheap and affordable accomodation by Location
+							</h4>
+           
+                        </div>
+           
+                        <!-- .heading-title end -->
+           
+                    </div>
+           
+                    <!-- .col-md-12 end -->
+           
+                </div>
+           
+                <!-- .row end -->
+           
+                <div class="row">
+           
+                    <!-- City #1 -->
+           
+                    <div class="col-12 col-sm-8 col-md-8">
+           
+                        <div class="property-city-item">
+           
+                            <div class="property--city-img img-hover">
+           
+                                <a href="#">
+           
+                                    <img  src="{% static 'main_app/assets/images/city1.jpg' %}" alt="city" class="img-responsive">
+           
+                                    <div class="property--city-overlay">
+           
+                                        <div class="property--item-content">
+           
+                                            <h5 class="property--title">Montreal</h5>
+           
+                                            <p class="property--numbers">{{ montreal_listings_count }} Properties</p>
+           
+                                        </div>
+           
+                                    </div>
+            
+                                </a>
+            
+                            </div>
+            
+                            <!-- .property-city-img end -->
+            
+                        </div>
+            
+                        <!-- . property-city-item end -->
+            
+                    </div>
+            
+                    <!-- .col-md-8 end -->
+            
+                    <!-- City #2 -->
+            
+                    <div class="col-12 col-sm-4 col-md-4">
+            
+                        <div class="property-city-item">
+            
+                            <div class="property--city-img img-hover">
+            
+                                <a href="#">
+            
+                                    <img src="{% static 'main_app/assets/images/city2.jpg' %}" alt="city" class="img-responsive">
+            
+                                    <div class="property--city-overlay">
+            
+                                        <div class="property--item-content">
+            
+                                            <h5 class="property--title">Vancouver</h5>
+            
+                                            <p class="property--numbers">{{ montreal_listings_count }} Properties</p>
+            
+                                        </div>
+            
+                                    </div>
+            
+                                </a>
+            
+                            </div>
+            
+                            <!-- .property-city-img end -->
+            
+                        </div>
+            
+                        <!-- . property-city-item end -->
+            
+                    </div>
+            
+                    <!-- .col-md-8 end -->
+            
+                </div>
+            
+                <!-- .row end -->
+            
+                <div class="row">
+
+
+                    
+
+                    <!-- City #3 -->
+
+                    <div class="col-12 col-sm-4 col-md-4">
+
+                        <div class="property-city-item">
+
+                            <div class="property--city-img img-hover">
+
+                                <a href="#">
+
+                                    <img src="{% static 'main_app/assets/images/city3.jpg' %}" alt="city" class="img-responsive">
+
+                                    <div class="property--city-overlay">
+
+                                        <div class="property--item-content">
+
+                                            <h5 class="property--title">Ottawa</h5>
+
+                                            <p class="property--numbers">{{ ottawa_listings_count }} Properties</p>
+
+                                        </div>
+
+                                    </div>
+
+                                </a>
+
+                            </div>
+
+                            <!-- .property-city-img end -->
+
+                        </div>
+
+                        <!-- . property-city-item end -->
+
+                    </div>
+
+                    <!-- .col-md-8 end -->
+
+                    <!-- City #4 -->
+
+                    <div class="col-12 col-sm-8 col-md-8">
+
+                        <div class="property-city-item">
+
+                            <div class="property--city-img img-hover">
+
+                                <a href="#">
+
+                                    <img src="{% static 'main_app/assets/images/city4.jpg' %}" alt="city" class="img-responsive">
+
+                                    <div class="property--city-overlay">
+
+                                        <div class="property--item-content">
+
+                                            <h5 class="property--title">Toronto</h5>
+
+                                            <p class="property--numbers">{{ toronto_listings_count }} Properties</p>
+
+                                        </div>
+
+                                    </div>
+
+                                </a>
+
+                            </div>
+
+                            <!-- .property-city-img end -->
+
+                        </div>
+
+                        <!-- . property-city-item end -->
+
+                    </div>
+
+                    <!-- .col-md-8 end -->
+
+                </div>
+
+                <!-- .row end -->
+
+            </div>
+
+            <!-- .container end -->
+
+        </section>
+{% endblock properties %}

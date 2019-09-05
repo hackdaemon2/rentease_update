@@ -1,0 +1,294 @@
+html,body{
+width: 100%;
+height: 100%;
+/*font-family: 'Raleway';font-size: 22px;*/
+}
+
+.row{
+  margin-right: 0px !important; margin-left: 0px !important;
+}
+
+/*colors*/
+.yellowish-color{
+  color: rgb(249,223,116) !important;
+}
+.dark-yellow-color{
+  color:#e4cd69 !important;
+}
+.reddish-color{
+  color: rgb(244,18,76) !important;
+  
+}
+.hard-brown{
+  color:#c8ac25;
+}
+.light-grey{
+  color: rgb(190,190,190);
+}
+
+
+
+/*navbar*/
+#navbar-cleaning{
+  background-color: black !important; padding: 1.5em 6em !important;
+}
+#navbar-cleaning .navbar-brand img{
+  width:150px !important;
+}
+.nav-active{
+  color:#fff !important;
+  text-decoration: underline !important;
+}
+#seacrh-input{
+  list-style: none;
+}
+#seacrh-input .form-group{
+  margin-bottom: 0rem !important;
+}
+.has-search input{
+  border-radius: 50px; color: rgb(244,18,76);
+}
+
+.has-search .form-control {
+    padding-left: 2.375rem;
+    padding-right: 1rem !important;
+}
+.has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+}
+.has-search ::placeholder {
+  color: rgb(244,18,76);
+}
+
+ #custom-ul .nav-item a{
+  color:rgb(244,18,76);
+  margin-right: 1em ;
+  /*font-weight: bold;*/
+}
+#custom-ul .dropdown-menu{
+  background-color: rgb(249,223,116); padding: .5em;
+}
+#custom-ul .dropdown-item{
+  background-color: #fff !important; color: rgb(244,18,76);
+}
+
+
+
+
+/* landlord-dashboard Menu nav*/
+.active-menu{
+  background-color: #fff !important;
+  border-bottom: 1px solid rgb(244,18,76);
+ 
+}
+.active-menu-text{
+    color: #e4cd69 !important;
+    border-bottom: 2px solid;
+    padding-bottom: .3em;
+}
+
+
+
+
+/*main content*/
+/*chat list*/
+#chat-list{
+  height: 100vh;
+}
+
+#chat-list .chat-active{
+  background-color: rgb(244,18,76) !important;
+}
+#chat-list .chat-active h6{
+  padding-left: 3rem !important;
+  color: #fff !important; 
+}
+.border-b-brown{
+border-bottom:1px solid #c8ac25;
+}
+.border-t-brown{
+border-top:1px solid #c8ac25;
+}
+
+
+ 
+ /*chat box*/
+ .chat{
+  width: 100% !important;
+  height: 100vh !important;
+ }
+.chat .chat-message span {
+    padding-top: 2% !important;
+}
+.chat .chat-message {
+   margin-top: 1.5rem !important;
+}
+.chat .chat-history {
+    height: 66.5% !important;
+}
+
+/*Chat ends*/
+
+/*footer*/
+#footer{
+  background-color: #e4cd69;
+  padding: 3em 4em;
+}
+#footer h5{
+   color: #6c757d;
+   font-weight: lighter;
+}
+.tumblr-icon{
+  margin-right: 2em;
+  margin-left: 2em;
+}
+
+/*Modal*/
+
+#profile-modal .modal-body h1{
+  font-size: 3em;
+}
+.btn-edit-profile{
+  background-color: rgb(244,18,76); padding: .5em 2em;
+}
+
+.nav-top-margin{
+  margin-top: 6.1rem;
+}
+
+
+
+
+/*reponsive*/
+
+/*// Large devices (desktops, less than 1200px)*/
+@media (max-width: 1199.98px) { 
+#navbar-cleaning {
+    padding: 1.5em 2em !important;
+}
+.chat .chat-history {
+    height: 82.5% !important;
+}
+ }
+/*// Medium devices (tablets, less than 992px)*/
+@media (max-width: 991.98px) { 
+
+
+#custom-ul .nav-item a {
+    margin-right: .5em;
+    font-size: 1.4em;
+}
+.has-search{
+  width: 240px;
+}
+
+.chat .chat-history {
+    height: 78.5% !important;
+}
+
+
+/*modal*/
+
+.modal-header h6 a{
+  font-size: 1.5em;
+}
+
+}
+/*// Small devices (landscape phones, less than 768px)*/
+@media (max-width: 767.98px) { 
+
+.navbar-toggler{
+  background-color:  rgb(214,19,91) !important;
+ }
+#navbar-cleaning {
+    padding: 1.5em 1em !important;
+}
+
+.chat .chat-history {
+    height: 72.5% !important;
+}
+#footer{
+  padding: 2em 1em;
+} 
+.respon-h4{
+  font-size: 1.4em;
+}
+
+
+ }
+
+
+/*// Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) { 
+
+.nav-top-margin {
+    margin-top: 4.7rem;
+}
+
+
+#navbar-cleaning {
+    padding: 1.5em 1em 1em 1em!important;
+}
+#navbar-cleaning .navbar-brand img {
+    width: 100px !important;
+}
+#navbar-cleaning .navbar-toggler {
+    padding: .25rem .5rem;
+    font-size: 1rem;
+}
+
+#chat-list .chat-active h6 {
+    padding-left: 1.5rem !important;
+  }
+ .chat .chat-header .chat-with {
+    font-weight: bold;
+    font-size: 20px;
+}
+.chat .chat-header img {
+    width: 35px;
+}
+.chat .chat-history {
+    height: 65.5% !important;
+}
+.chat .chat-message textarea {
+    width: 75% !important;
+    margin-left: 5px !important;
+}
+.chat .chat-message span img {
+    width: 35px;
+    padding-top: 1rem;
+}
+
+
+#footer h5{
+  font-size: .8em;
+ }
+ #footer h6{
+  font-size: .9em;
+ }
+ .tumblr-icon-head-p{
+ padding-left: 0px !important;
+ padding-right: 0px !important;
+ text-align: center !important;
+}
+.tumblr-icon{
+  margin-left: 1em;
+  margin-right: 1em;
+}
+.row-custom h4{
+  font-size: 1em;
+}
+.modal-body h5{
+  font-size: .8em;
+}
+ }
+
+

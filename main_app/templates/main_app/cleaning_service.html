@@ -1,0 +1,146 @@
+{% extends 'main_app/home_base2.html' %}
+{% load static %}
+
+{% block title %}
+Cleaning Service
+{% endblock title %}
+
+{% block pagestyle %}
+<link rel="stylesheet" type="text/css" href="{% static 'main_app/assets/css/cleaning-service-style1.css' %}">
+{% endblock pagestyle %}
+
+{% block contents %}
+
+	<div class="container-fluid">
+				
+				<!-- order row  starts-->
+				<div class="row justify-content-center order-row">
+					<div class="col-xl-6 col-lg-9 col-md-11 col-12 text-center "style="color: rgb(244,18,76);">
+						<h1 class="font-weight-bold">
+							Order for room cleaning services
+						</h1>
+						<h4 class="text-center text-white">
+							<small>Why clean when we can do it for you? Fill the form below to get 25% discount voucher. Valid till January 2018</small> 
+						</h4>
+					</div>
+				</div>
+				<!-- order row  ends-->
+
+				<!-- booking form  starts-->
+				<div id="order-form" class="row justify-content-center">
+					<div class="order-form-wrapper">
+					 <form id="moving-form">
+						
+						<!-- location row starts -->
+						<div class="form-row">
+							<div class="col form-group">
+								<div class="input-group">
+								    <div class="input-group-prepend">
+								      <span class="input-group-text">
+								      	<img src="assets/images/moving-from.png"> <small class="font-weight-bold">Property Location</small> </span>
+								    </div>
+									  <select class="form-control border-left-0" id="exampleFormControlSelect1">
+								      <option>Select City</option>
+								      <option>2</option>
+								      <option>3</option>
+								      <option>4</option>
+								      <option>5</option>
+							    	  </select>
+								</div> 
+							</div>
+						</div>
+							
+							<!-- location row ends -->
+							
+							<div class="form-row mt-2">
+								<div class="col form-group">
+									<label><small class="font-weight-bold dark-yellow-color">House Size</small></label>
+									<div class="input-group">
+									    <div class="input-group-prepend">
+									      <span class="input-group-text">
+									      	 <i class="fas fa-home"></i></span>
+									    </div>
+										<input type="text" class="form-control border-left-0" placeholder="Select">
+									</div> 
+								</div>
+								<div class="col form-group">
+									<label><small class="font-weight-bold dark-yellow-color">Date Required</small></label>
+									<div class="input-group">
+									    <div class="input-group-prepend">
+									      <span class="input-group-text">
+									      	 <i class="fas fa-calendar-alt"></i></span>
+									    </div>
+										<input type="text" class="form-control border-left-0" placeholder="DD/MM/YYYY">
+									</div> 
+								</div>
+							</div>
+							<div class="form-row mt-2">
+								<div class="col form-group">
+									<textarea class="form-control" rows="3" id="comment" placeholder="about me"></textarea>
+								</div>
+							</div>
+							
+							<!-- check boxes  starts-->
+							<div class="form-row mt-2">
+								<div class="col form-group">
+									<div class="form-check">
+									  <label class="form-check-label">
+									    <input type="radio" class="form-check-input" name="optradio"><small class=" dark-yellow-color">External Cleaning</small>
+									  </label>
+									</div>
+								</div>
+							</div>
+							
+							<div class="form-row">
+								<div class="col form-group">
+									<div class="form-check">
+									  <label class="form-check-label">
+									    <input type="radio" class="form-check-input" name="optradio"><small class=" dark-yellow-color">Furniture Cleaning</small>
+									  </label>
+									</div>
+								</div>
+							</div>
+							<!-- check box ends -->
+						    <div class="form-row mt-2">
+								<div class="col form-group"> 
+									<a href="select-items.html" class="btn btn-sm btn-request" style="">Request Cleaners</a>
+								
+							</div> <!-- form-group end.// -->
+							</div><!-- form-group end.// -->                                   
+						</form>
+					</div>
+				</div>
+				<!-- booking form ends-->
+			</div>
+		</section>
+</header>
+<!-- Header ends -->
+
+<!-- main boddy starts -->
+
+	    <main  id="main" class="container-fluid" style="">
+	     
+	 	<!-- para starts -->
+	    	<div class="row justify-content-center para-row">
+			    <div class="col-lg-8 col-md-10" >
+			   		<h2 class="font-weight-bold pl-2">Lorem Ipsum<span class="dark-yellow-color d-block"> <small>Lorem ipsum dolor emit</small></span></h2>
+			   			<p class="dark-yellow-color">
+			   			Lorem ipsum dolor emit lorem ispumLorem ipsum dolor emit lorem ispumLorem ipsum dolor emit lorem ispumLorem ipsum dolor emit lorem ispum
+			   			Lorem ipsum dolor emit lorem ispumLorem ipsum dolor emit</p>	
+			    </div>	    	
+		    </div>
+	    	<div class="row justify-content-center para-row">
+			    <div class="col-lg-8 col-md-10">
+			   		<h2 class="font-weight-bold pl-2">Lorem Ipsum<span class="dark-yellow-color d-block"> <small>Lorem ipsum dolor emit</small></span></h2>
+			   			<p class="dark-yellow-color">
+			   			Lorem ipsum dolor emit lorem ispumLorem ipsum dolor emit lorem ispumLorem ipsum dolor emit lorem ispumLorem ipsum dolor emit lorem ispum
+			   			Lorem ipsum dolor emit lorem ispumLorem ipsum dolor emit</p>	
+			    </div>	    	
+		    </div>
+	    	
+	    	<!-- steps ends -->
+	    </main>
+
+
+
+{% endblock contents %}

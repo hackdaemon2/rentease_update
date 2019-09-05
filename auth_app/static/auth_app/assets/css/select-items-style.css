@@ -1,0 +1,284 @@
+html,body{
+width: 100%;
+height: 100%;
+/*font-family: 'Raleway';font-size: 22px;*/
+}
+
+.row{
+  margin-right: 0px !important; margin-left: 0px !important;
+}
+
+
+/*colors*/
+.yellowish-color{
+  color: rgb(249,223,116) !important;
+}
+.dark-yellow-color{
+  color:#e4cd69 !important;
+}
+.reddish-color{
+  color: rgb(244,18,76) !important;
+}
+
+.light-grey{
+  color: rgb(190,190,190);
+}
+
+/*navbar*/
+#navbar-cleaning{
+  background-color: black !important; padding: 1.5em 5em !important;
+}
+#navbar-cleaning .navbar-brand img{
+  width:150px !important;
+}
+.nav-active{
+  color:#fff !important;
+  text-decoration: underline !important;
+}
+#seacrh-input{
+  list-style: none;
+}
+#seacrh-input .form-group{
+  margin-bottom: 0rem !important;
+}
+.has-search input{
+  border-radius: 50px; color: rgb(244,18,76);
+}
+
+.has-search .form-control {
+    padding-left: 2.375rem;
+    padding-right: 1rem !important;
+}
+.has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+}
+.has-search ::placeholder {
+  color: rgb(244,18,76);
+}
+
+ #custom-ul .nav-item a{
+  color:rgb(244,18,76);
+  margin-right: 1em ;
+  font-weight: bold;
+}
+#custom-ul .dropdown-menu{
+  background-color: rgb(249,223,116); padding: .5em;
+}
+#custom-ul .dropdown-item{
+  background-color: #fff !important; color: rgb(244,18,76);
+}
+
+/*sub menu nav*/
+.active-menu{
+  background-color: rgb(255,51,97) !important;
+  position: relative;right:.3%;
+}
+
+#sub-menu-items{
+  background-color: rgb(244,18,76); padding: 0em 2em;
+}
+#sub-menu-items .border-r-white{
+  border-right: 1px solid white;
+}
+#main .btn-continue{
+  padding: .8em 2em; background-color: rgb(172,147,44);
+}
+
+/*main*/
+
+ .item-amount-wrapper{
+  margin-right: 5em;
+ }
+  .item-amount-wrapper .item-div{
+    border:1px solid rgb(178,178,178); width: 150px; padding: .3em 1em .6em; font-size: 1.2em;
+  }
+
+/*carts row*/
+.item-cards {
+ padding: 0em 4em;
+}
+.item-cards .card{
+ width: 100%;
+ height: 300px;
+}
+.item-cards .card .card-body button i{
+  color: rgb(190,190,190) !important;
+}
+.item-cards .card-body input{
+  width: 35px; color: rgb(172,147,44); padding: .25em;border:1px solid rgb(190,190,190); margin-top: .2em;
+}
+.item-cards  .custom-card{
+  background-color: rgb(242,242,242);
+}
+.item-cards  .custom-card i{
+  padding-top: 40%; 
+}
+.item-cards  .custom-card .btn-add-custom{
+  padding: .5em 2em; border-radius: 10px;
+}
+.mr-btn-continue{
+  margin-right: 5rem;
+}
+
+
+
+
+/*footer*/
+#footer{
+  background-color: #e4cd69;
+  padding: 3em 4em;
+}
+#footer h5{
+   color: #6c757d;
+   font-weight: lighter;
+}
+.tumblr-icon{
+  margin-right: 2em;
+  margin-left: 2em;
+}
+
+/*Modal*/
+
+#profile-modal .modal-body h1{
+  font-size: 3em;
+}
+.btn-edit-profile{
+  background-color: rgb(244,18,76); padding: .5em 2em;
+}
+
+.nav-top-margin{
+  margin-top: 6.1rem;
+}
+
+
+
+/*reponsive*/
+
+/*// Large devices (desktops, less than 1200px)*/
+@media (max-width: 1199.98px) { 
+#navbar-cleaning {
+    padding: 1.5em 2em !important;
+}
+.item-cards {
+    padding: 0em 0em;
+}
+.item-amount-wrapper {
+    margin-right: 1em;
+}
+.mr-btn-continue {
+    margin-right: 1rem;
+}
+ }
+/*// Medium devices (tablets, less than 992px)*/
+@media (max-width: 991.98px) { 
+
+
+.navbar-toggler{
+  background-color:  rgb(214,19,91) !important;
+ }
+#seacrh-input .form-group {
+    margin-top: 1rem;
+    margin-bottom: .5rem !important;
+}
+.has-search {
+      width: 250px;
+}
+#custom-ul .nav-item a {
+    margin-right: .5em;
+    font-size: 1.4em;
+}
+ #custom-ul .dropdown-menu {
+    width: 240px;
+}
+#sub-menu-items {
+    padding: 0em 1em;
+}
+
+/*modal*/
+
+.modal-header h6 a{
+  font-size: 1.5em;
+}
+
+}
+/*// Small devices (landscape phones, less than 768px)*/
+@media (max-width: 767.98px) { 
+#sub-menu-items {
+    padding: 0em 0em;
+}
+#footer{
+  padding: 2em 1em;
+} 
+.respon-h4{
+  font-size: 1.4em;
+}
+
+ }
+
+
+/*// Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) { 
+.nav-top-margin {
+    margin-top: 4.7rem;
+}
+
+
+  #navbar-cleaning {
+    padding: 1.5em 1em 1em 1em!important;
+}
+#navbar-cleaning .navbar-brand img {
+    width: 100px !important;
+}
+.navbar-toggler {
+    padding: .0rem .25rem;
+    font-size: 1rem;
+}
+
+.plr-0-respon{
+padding-left: 0px !important;
+padding-right: 0px !important;
+}
+
+
+.item-amount-wrapper .item-div {
+    width: 100px;
+    padding: 0.3em 0em .4em;
+  }
+
+  #main .btn-continue {
+    padding: .7em 2em;
+  }
+
+#footer h5{
+  font-size: .8em;
+ }
+ #footer h6{
+  font-size: .9em;
+ }
+ .tumblr-icon-head-p{
+ padding-left: 0px !important;
+ padding-right: 0px !important;
+ text-align: center !important;
+}
+
+.tumblr-icon{
+  margin-left: 1em;
+  margin-right: 1em;
+}
+.row-custom h4{
+  font-size: 1em;
+}
+.modal-body h5{
+  font-size: .8em;
+}
+ }
+
+

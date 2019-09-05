@@ -1,0 +1,434 @@
+html,body{
+width: 100%;
+height: 100%;
+/*font-family: 'Raleway';font-size: 22px;*/
+}
+.row{
+  margin-right: 0px !important; margin-left: 0px !important;
+}
+
+/*navbar*/
+#navbar{
+  background-color: black !important; padding: 1.5em 5em !important;
+}
+.navbar-brand img{
+  width:150px !important;
+}
+
+#navbar .dropdown-menu{
+  background-color: rgb(249,223,116); padding: .5em;
+}
+#navbar .dropdown-item{
+  background-color: #fff;color: rgb(244,18,76);
+}
+#navbar .btn-signup{
+  background-color: rgb(249,223,116);color: rgb(244,18,76);
+}
+.nav-top-margin{
+  margin-top: 6.2rem;
+}
+
+
+ #custom-ul .nav-item a{
+  color:rgb(244,18,76);
+  margin-right: 1em ;
+  font-weight: bold;
+}
+
+.nav-active{
+  color:#fff !important;
+  text-decoration: underline !important;
+}
+#seacrh-input{
+  list-style: none;
+}
+#seacrh-input .form-group{
+  margin-bottom: 0rem !important;
+}
+
+.has-search input{
+  border-radius: 50px; color: rgb(244,18,76);
+}
+
+.has-search .form-control {
+    padding-left: 2.375rem;
+    padding-right: 1rem !important;
+}
+
+
+.has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+}
+.has-search ::placeholder {
+  color: rgb(244,18,76);
+}
+
+/*filter nave starts*/
+
+#filter-nav .nav-item{
+  list-style: none !important;
+}
+#appartment-search{
+  padding: 1em 1em .5em 1em;
+}
+
+#appartment-search .form-control {
+    color: rgb(244,18,76) !important;
+    background-color: rgb(219,219,219) !important;
+}
+
+/*Appartments display*/
+#main .card , #popup-cards .card{
+width:100% !important;border-radius: 0px 0px 15px 15px !important;
+}
+#main .card .card-img-top  , #popup-cards .card-img-top  {
+width:100% !important;
+}
+
+#main .btn-cad , #popup-cards .btn-cad{
+background-color: rgb(244,25,75); color: #fff;position: absolute; left: 10px;top: 5px;
+}
+#main .btn-view , #popup-cards .btn-view{
+  background-color: rgb(172,147,44); color: #fff; position: absolute;right: 10px;bottom: 5px;
+}
+#main .card .card-body, #popup-cards .card .card-body{
+background-color: rgb(244,18,76) !important;border-radius: 0px 0px 15px 15px !important;
+}
+.btn-show-more{
+  padding: 1em 3em;
+}
+
+/*colors*/
+.yellowish-color{
+  color: rgb(249,223,116) !important;
+}
+.dark-yellow-color{
+  color:#e4cd69 !important;
+}
+
+.reddish-color{
+  color: rgb(244,18,76);
+}
+
+
+
+/*extra updated design*/
+#rental-listing h6 a{
+ color: rgb(244,18,76);
+ text-decoration: none;
+}
+#rental-listing .active-list{
+  color:#e4cd69 !important;
+  border-bottom: 2px solid;
+  padding-bottom: .5rem;
+}
+
+#report .custom-control-label {
+  font-size: 1rem !important; font-weight: normal;
+}
+.btn-pop-available, .btn-pop-cancel{
+  font-size: .7rem;
+}
+.badges .feature_badge {
+  font-size: .9rem; 
+  padding: .1rem .2rem; background-color: #8080808f;
+}
+.badges .pet_badge{
+background: #e4cd69 !important; padding: .2rem .5rem; font-size: .8rem; color: white;border-radius: 10px;
+}
+.badges .verified_badge{
+background: rgb(244,18,76); padding: .2rem .5rem; font-size: .8rem; color: white;border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+/*main*/
+#main{
+  padding-left: 0px; padding-right: 0px; 
+}
+
+
+
+.tumblr-icon{
+  margin-right: 2em;
+  margin-left: 2em;
+}
+#find-form .form-control{
+  color: rgb(244,18,76) !important;
+}
+ .custom-place  ::placeholder {
+  color: rgb(244,18,76);
+}
+.para-row h2{
+  color: rgb(244,18,76);
+}
+.para-row p{
+  padding-left: 10px;
+}
+
+/*footer*/
+#footer{
+  background-color: #e4cd69;
+  padding: 3em 4em;
+}
+#footer h5{
+   color: #6c757d;
+   font-weight: lighter;
+}
+
+.fixed-top{
+  z-index: 8;
+}
+/*Login phase*/
+.header-overlay2{
+  position: absolute;
+  top: 16%;
+  left: 0;
+  right:0;
+  overflow: hidden; 
+  z-index: 10;
+}
+.logins-container{
+  width:400px; height:auto;
+
+  background-image: linear-gradient(to bottom right, rgb(244,18,76) 60%, yellow);
+  background-image: -moz-linear-gradient(to bottom right, rgb(244,18,76) 60%, yellow); 
+  background-image: -webkit-linear-gradient(to bottom right, rgb(244,18,76) 60%, yellow); 
+  background-image: -o-linear-gradient(to bottom right, rgb(244,18,76) 60%, yellow);  
+  background-image: -ms-linear-gradient(to bottom right, rgb(244,18,76) 60%, yellow); 
+
+  padding: 1em 2em; display: none; 
+  overflow: hidden;
+}
+
+.header-mt{
+  margin-top: 4em;
+}
+.login-body-mb{
+  margin-bottom: 4em;
+}
+/*Pop up starts*/
+#sidebarX{
+  position: fixed;top:0;z-index: 250;overflow-y: scroll;bottom: 0;
+}
+.floor-plan-wraper{
+  border-bottom:1px solid #e4e7e9;
+}
+.share-dropdown{
+  width:220px !important; padding: .5rem !important;
+}
+.btn-check-availabilty-main,.btn-request-info , .btn-send-main, .btn-report-main{
+background-color: rgb(244,18,76) !important;
+border-color: rgb(244,18,76) !important;
+}
+.btn-cancel-main{
+  background-color: #e4cd69 !important;
+  border-color: #e4cd69 !important;
+  color: #fff;
+}
+
+
+
+
+/*Responsive*/
+/*// Large devices (desktops, less than 1200px)*/
+@media (max-width: 1199.98px) { 
+
+#navbar{
+    padding: 1.5em 1em !important;
+}
+.nav-top-margin {
+    margin-top: 6.3rem;
+}
+.header-overlay2 {
+    top: 8%;
+}
+
+ }
+/*// Medium devices (tablets, less than 992px)*/
+@media (max-width: 991.98px) {
+.navbar-toggler{
+  background-color:  rgb(214,19,91) !important;
+ }
+#seacrh-input .form-group {
+    margin-top: 1rem;
+    margin-bottom: .5rem !important;
+}
+.has-search {
+      width: 250px;
+}
+#custom-ul .nav-item a {
+    margin-right: .5em;
+    font-size: 1.4em;
+}
+ #custom-ul .dropdown-menu {
+    width: 240px;
+}
+.btn-signup{
+  width: 120px;
+}
+
+#main .btn-cad {
+    font-size: .5em;
+}
+#main .btn-view {
+    font-size: .5em;
+}
+#main .card-body h6{
+  font-size: .8rem;
+}
+#main .card-body span i{
+  font-size: .6rem;
+}
+.selector .slider-price {
+    width: 40px !important;
+    font-size: .8rem !important;
+  }
+.selector #slider-range {
+    width: 55% !important;
+}
+
+}
+/*// Small devices (landscape phones, less than 768px)*/
+@media (max-width: 767.98px) {
+
+
+
+#main .btn-cad {
+    font-size: initial;
+}
+#main .btn-view {
+    font-size: initial;
+}
+#main .card-body h6{
+  font-size: initial;
+}
+#main .card-body span i{
+  font-size: initial;
+}
+#footer {
+    padding: 2em 1em;
+}
+
+.selector .ui-slider-handle {
+    top: -6px !important;
+    width: 15px !important;
+    height: 15px !important;
+}
+.selector .price-slider {
+    padding-top: 10px !important;
+}
+#appartment-search {
+    padding: 1em 1em 1em 1em;
+}
+.respon-float{
+  float:right;
+  margin-right: 1rem;
+}
+
+}
+
+/*// Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) { 
+    #navbar {
+    padding:  1em!important;
+}
+#navbar .navbar-brand img {
+    width: 100px !important;
+}
+.navbar-toggler {
+    padding: .0rem .25rem;
+    font-size: 1rem;
+}
+
+.nav-top-margin {
+    margin-top: 4.7rem;
+}
+
+
+.logins-container {
+    /* z-index: 2; */
+    width: 300px;
+    padding: 1em;
+}
+#footer h5 {
+    font-size: .8em;
+}
+#footer h6 {
+    font-size: .9em;
+}
+.tumblr-icon-head-p{
+ padding-left: 0px !important;
+ padding-right: 0px !important;
+ text-align: center !important;
+}
+
+.tumblr-icon {
+    margin-right: 1em;
+    margin-left: 1em;
+}
+.row-custom h4 {
+    font-size: 1em;
+}
+.respon-float{
+  float:none;
+  padding-left: 5rem;
+  padding-top: 1rem;
+  margin-right: 0rem;
+}
+
+#main {
+  margin-top: 20rem !important;
+}
+.header-h6{
+  font-size: .8rem;
+}
+.header-h2{
+  font-size: 1.5rem;
+}
+.floor-plan-wraper h4{
+  font-size: 1rem;
+}
+
+.btn-check-availabilty-main{
+   
+    cursor: pointer;
+    font-size: .7rem;
+    padding: .4rem .5rem;
+
+}
+.p-xs-lr{
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+#other-apartment h5{
+      font-size: 1rem;
+}
+.btn-alert-check{
+      font-size: .6rem;
+}
+.h5-last-respon{
+  font-size: 1rem;
+}
+
+
+ }
+
+
+
+
+
+

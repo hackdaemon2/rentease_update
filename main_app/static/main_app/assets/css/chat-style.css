@@ -1,0 +1,146 @@
+
+
+
+
+.chat {
+  width: 350px;
+  height: 500px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  color: #434651;
+}
+.chat .chat-header {
+  padding: 12px;
+  background:#a8891c;
+  color:white;
+  border-bottom: 2px solid #a8891c;
+}
+.chat .chat-header img {
+  float: right;
+}
+.chat .chat-header .chat-with {
+  font-weight: bold;
+  font-size: 30px;
+}
+.chat .chat-header .chat-num-messages {
+  color: #92959E;
+}
+.chat .chat-header .fa-star {
+  float: right;
+  color: #D8DADF;
+  font-size: 20px;
+  margin-top: 12px;
+}
+.chat .chat-history {
+  padding: 10px;
+  border-bottom: 2px solid white;
+  overflow-y: scroll;
+  height: 62.5%;
+}
+.chat .chat-history ul {
+	padding-left: 0px;
+	list-style-type: none;
+}
+.chat .chat-history::-webkit-scrollbar { 
+    display: none;
+}
+.chat .chat-history .message-data {
+  margin-bottom: 15px;
+}
+.chat .chat-history .message {
+  color: white;
+  padding: 18px 20px;
+  line-height: 26px;
+  font-size: 16px;
+  border-radius: 7px;
+  margin-bottom: 30px;
+  margin-right: 1%;
+  width: 80%;
+  display: inline-block;
+  position: relative;
+}
+.chat .chat-history .my-message {
+  background: #ffe87a;
+}
+.chat .chat-history .other-message {
+  background: #94C2ED;
+}
+.chat .chat-history .other-message:after {
+  border-bottom-color: #94C2ED;
+  left: 93%;
+}
+/*.chat .chat-message {
+  padding: 5px 0px 5px 5px;
+}*/
+.chat .chat-message{
+  background: #F2F5F8;
+}
+
+.chat .chat-message textarea {
+  width: 80%;
+  border: none;
+  padding: 10px 20px;
+  font: 14px/22px "Lato", Arial, sans-serif;
+  margin-bottom: 10px;
+     margin-top: 15px;
+     margin-left: 10px;
+
+  border-radius: 20px;
+  resize: none;
+}
+.chat .chat-message span {
+  float: right;
+  padding-left: 0%;
+  padding-top: 4%;
+  padding-right: 2%;
+  cursor: pointer;
+}
+
+.chat .chat-message span img{
+      width: 45px;
+}
+.chat .chat-message a:hover {
+  color: #75b1e8;
+  border: none;
+}
+.chat .logo-div{
+  background: #a8891c; 
+}
+
+.online, .offline, .me {
+  margin-right: 3px;
+  font-size: 10px;
+}
+
+.online {
+  color: #ffe87a;
+}
+
+.offline {
+  color: #E38968;
+}
+
+.me {
+  color: #94C2ED;
+}
+
+.align-left {
+  text-align: left;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.float-right {
+  float: right;
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}

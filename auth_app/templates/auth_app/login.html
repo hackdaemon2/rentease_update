@@ -1,0 +1,79 @@
+{% extends 'auth_app/base_auth.html' %}
+{% load static %}
+
+{% block title %}
+Login
+{% endblock title%}
+
+{% block content %}
+<div class="container-scroller">
+  <div class="container-fluid page-body-wrapper full-page-wrapper">
+    <div class="content-wrapper auth p-0 theme-two">
+      <div class="row d-flex align-items-stretch">
+        <div class="col-md-4 banner-section d-none d-md-flex align-items-stretch justify-content-center">
+          <div class="slide-content bg-1">
+          </div>
+        </div>
+        <div class="col-12 col-md-8 h-100 bg-white">
+          <div class="auto-form-wrapper d-flex align-items-center justify-content-center flex-column">
+            <div class="nav-get-started">
+              <p>Don't have an account?</p>
+              <a class="btn get-started-btn" href="{% url 'auth_app:signup' %}">GET STARTED</a>
+              <a class="btn get-started-btn" href="/">HOME</a>
+            </div>
+            <form id="auth-login" action="{% url 'auth_app:login' %}" method="post">
+              <h3 class="mr-auto">Hello! let's get started</h3>
+              <p class="mb-5 mr-auto">Enter your details below.</p>
+              {% csrf_token %}
+              <div>
+                <div class="col-md-12">
+                  {% if form.non_field_errors %}
+                  {% for errors in form.non_field_errors %}
+                  <div class="alert alert-danger">
+                    {{ errors }}
+                  </div>
+                  {% endfor %}
+                  {% endif %}
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text"><i class="mdi mdi-account-outline"></i></span>
+                  </div>
+                  {{ form.username }}
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text"><i class="mdi mdi-lock-outline"></i></span>
+                  </div>
+                  {{ form.password }}
+                </div>
+              </div>
+              <div class="form-group">
+                <button id="auth-login-btn" class="btn btn-block btn-lg btn-danger"><i class="mdi mdi-lock-outline"></i>
+                  LOGIN</button>
+                <button type="button" id="fb" data-url="{% url 'social:begin' 'facebook' %}"
+                  class="btn btn-block social-btn btn-social-outline-facebook"><i class="mdi mdi-facebook"></i> Login
+                  with Facebook</button>
+                <button type="button" id="google" data-url="{% url 'social:begin' 'google' %}"
+                  class="btn btn-block social-btn btn-social-outline-google"><i class="mdi mdi-google"></i> Login with
+                  Google</button></div>
+              <p class="text-center"><a href="{% url 'auth_app:password_reset' %}">Forgot password?</a></p>
+          </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- content-wrapper ends -->
+</div>
+<!-- page-body-wrapper ends -->
+</div>
+{% endblock content%}
+
+{% block extra_scripts%}
+<script src="{% static 'auth_app/auth_assets/js/social_auth.js' %}"></script>
+{% endblock extra_scripts %}

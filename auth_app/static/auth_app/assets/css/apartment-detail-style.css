@@ -1,0 +1,368 @@
+html,body{
+width: 100%;
+height: 100%;
+/*font-family: 'Raleway';font-size: 22px;*/
+}
+
+.row{
+  margin-right: 0px !important; margin-left: 0px !important;
+}
+
+/*navbar*/
+#navbar{
+  background-color: black !important; padding: 1.5em 5em !important;
+}
+.navbar-brand img{
+  width:150px !important;
+}
+
+#navbar .dropdown-menu{
+  background-color: rgb(249,223,116); padding: .5em;
+}
+#navbar .dropdown-item{
+  background-color: #fff;color: rgb(244,18,76);
+}
+#navbar .btn-signup{
+  background-color: rgb(249,223,116);color: rgb(244,18,76);
+}
+.nav-top-margin{
+  margin-top: 6.1rem;
+}
+
+.order-row{
+  margin-top: 5em;
+}
+.reddish-color{
+  color: rgb(244,18,76);
+}
+ #custom-ul .nav-item a{
+  color:rgb(244,18,76);
+  margin-right: 1em ;
+  font-weight: bold;
+}
+
+.nav-active{
+  color:#fff !important;
+  text-decoration: underline !important;
+}
+
+.has-search input{
+  border-radius: 50px; color: rgb(244,18,76);
+}
+
+.has-search .form-control {
+    padding-left: 2.375rem;
+    padding-right: 1rem !important;
+}
+
+.has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+}
+.has-search ::placeholder {
+  color: rgb(244,18,76);
+}
+
+/*colors*/
+.yellowish-color{
+  color: rgb(249,223,116) !important;
+}
+.dark-yellow-color{
+  color:#e4cd69 !important;
+}
+.reddish-color{
+  color: rgb(244,18,76) !important;
+}
+
+
+
+/*Service section*/
+
+.service{
+  margin-bottom: 5em;
+}
+
+section.service{
+  background-position: center;
+  background-image: url("../images/view-appartment.jpg");
+  background-size: cover;
+  max-height:50vh;
+}
+
+#seacrh-input{
+  list-style: none;
+}
+#seacrh-input .form-group{
+  margin-bottom: 0rem !important;
+}
+
+
+/*main*/
+#main{
+  padding-left: 0px; padding-right: 0px;margin-bottom: 6em; margin-top: -4em;
+}
+#main .links-wrapper{
+  padding-left: 9em;
+}
+
+#main .links-nav a{
+  color: rgb(244,18,76);
+padding-right: 2em;
+}
+
+.para-row{
+  padding-left: 7em;
+}
+
+.para-row h3{
+  color: rgb(244,18,76);
+}
+.para-row p{
+  padding-left: 10px;
+}
+.para-row h6{
+  font-size: .7em;
+}
+
+
+
+/*slides*/
+#slider-images img{
+  width: 100%; height: 100%;
+}
+
+.mycustomSlides {display: none;}
+
+/* The dots/bullets/indicators */
+.customdot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.dotactive, .customdot:hover {
+  background-color:rgb(244,18,76);
+}
+
+/* Fading animation */
+.customfade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+.host-img {
+  width: 100px !important;
+}
+
+
+
+/*footer*/
+#footer{
+  background-color: #e4cd69;
+  padding: 3em 4em;
+}
+#footer h5{
+   color: #6c757d;
+   font-weight: lighter;
+}
+
+.span-address{
+  background-color: rgb(71,72,75,0.8);padding: .5em;
+}
+.fixed-top{
+  z-index: 8 !important;
+}
+
+/*Login phase*/
+.header-overlay2{
+  position: absolute;
+  top: 16%;
+  left: 0;
+  right:0;
+  overflow: hidden; 
+  z-index: 10;
+}
+.logins-container{
+  width:400px; height:auto;
+
+  background-image: linear-gradient(to bottom right, rgb(244,18,76) 60%, yellow);
+  background-image: -moz-linear-gradient(to bottom right, rgb(244,18,76) 60%, yellow); 
+  background-image: -webkit-linear-gradient(to bottom right, rgb(244,18,76) 60%, yellow); 
+  background-image: -o-linear-gradient(to bottom right, rgb(244,18,76) 60%, yellow);  
+  background-image: -ms-linear-gradient(to bottom right, rgb(244,18,76) 60%, yellow); 
+
+  padding: 1em 2em; display: none; 
+  overflow: hidden;
+}
+.header-mt{
+  margin-top: 4em;
+}
+.login-body-mb{
+  margin-bottom: 4em;
+}
+.tumblr-icon{
+  margin-left: 2em;
+  margin-right: 2em;
+}
+
+
+/*Responsive*/
+
+/*// Large devices (desktops, less than 1200px)*/
+@media (max-width: 1199.98px) { 
+
+#navbar {
+    padding: 1.5em 2em !important;
+}
+
+ }
+
+/*// Medium devices (tablets, less than 992px)*/
+@media (max-width: 991.98px) { 
+.nav-top-margin {
+    margin-top: 6.25rem;
+}
+
+.navbar-toggler{
+  background-color:  rgb(214,19,91) !important;
+ }
+#seacrh-input .form-group {
+    margin-top: 1rem;
+    margin-bottom: .5rem !important;
+}
+.has-search {
+      width: 250px;
+}
+#custom-ul .nav-item a {
+    margin-right: .5em;
+    font-size: 1.4em;
+}
+ #custom-ul .dropdown-menu {
+    width: 240px;
+}
+
+.btn-signup{
+  width: 120px;
+}
+.order-row h2{
+  font-size: 1.6rem;
+ }
+#main .links-wrapper {
+    padding-left: 1em;
+}
+.para-row {
+    padding-left: 0em;
+}
+
+}
+
+/*// Small devices (landscape phones, less than 768px)*/
+@media (max-width: 767.98px) { 
+.nav-top-margin {
+    margin-top: 6.15rem;
+}
+
+#main .links-nav a {
+    padding-right: 1em;
+    font-size: .75em;
+} 
+#footer{
+  padding: 2em;
+} 
+.respon-h4{
+  font-size: 1.4em;
+}
+}
+/*// Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+ /* .navbar{
+    z-index: 2 !important;
+  }*/
+.nav-top-margin {
+    margin-top: 4.7rem;
+}
+
+   #navbar{
+    padding:  1em !important;
+}
+#navbar .navbar-brand img {
+    width: 100px !important;
+}
+.navbar-toggler {
+    padding: .0rem .25rem;
+    font-size: 1rem;
+}
+
+.logins-container{
+  width: 300px;
+  padding: 1em;
+  z-index: 1;
+}
+
+.order-row {
+    margin-top: 0em;
+}
+.padding-x-0{
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+.order-row h2 {
+    font-size: 1.3rem;
+}
+.order-row h6 i {
+    font-size: .6rem;
+}
+#main {
+    margin-top: 15em;
+}
+#footer h5{
+  font-size: .8em;
+ }
+ #footer h6{
+  font-size: .9em;
+ }
+ .tumblr-icon-head-p{
+ padding-left: 0px !important;
+ padding-right: 0px !important;
+ text-align: center !important;
+}
+.tumblr-icon{
+  margin-left: 1em;
+  margin-right: 1em;
+}
+.row-custom h4{
+  font-size: 1em;
+}
+}
+
+
+
+
+
+/*// Extra large devices (large desktops)
+// No media query since the extra-large breakpoint has no upper bound on its width
+
+*/

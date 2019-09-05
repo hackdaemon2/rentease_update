@@ -1,0 +1,126 @@
+{% extends 'auth_app/base_auth.html' %}
+{% load static %}
+
+{% block title %}
+Signup
+{% endblock title %}
+
+{% block content %}
+<div class="container-scroller">
+  <div class="container-fluid page-body-wrapper full-page-wrapper">
+    <div class="content-wrapper auth p-0 theme-two">
+      <div class="row d-flex align-items-stretch">
+        <div class="col-md-4 banner-section d-none d-md-flex align-items-stretch justify-content-center">
+          <div class="slide-content bg-1">
+          </div>
+        </div>
+        <div class="col-12 col-md-8 h-100 bg-white">
+          <div class="auto-form-wrapper d-flex align-items-center justify-content-center flex-column">
+            <div class="nav-get-started">
+              <p>Already have an account?</p>
+              <a class="btn get-started-btn" href="{% url 'auth_app:login' %}">LOGIN</a>
+            </div>
+            <form method="post" action="{% url 'auth_app:signup' %}">
+              {% csrf_token %}
+              <div>
+                <h3 class="mr-auto">Sign Up</h3>
+                <p id="signup-message" class="mb-5 mr-auto">Enter your details below.</p>
+                {% if form.non_field_errors %}
+                {% for errors in form.non_field_errors %}
+                <div class="alert alert-danger">
+                  {{ errors }}
+                </div>
+                {% endfor %}
+                {% endif %}
+                {% if form.errors %}
+                <div class="alert alert-danger">
+                  {% for field_errors in form %}
+                  {{ field_errors.errors }}
+                  {% endfor %}
+                </div>
+                {% endif %}
+                <p id="pass-info"></p>
+                <div class="form-group">
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text"><i class="mdi mdi-account-outline"></i></span>
+                    </div>
+                    {{ form.email }}
+                    <br />
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-6 col-xs-12 col-sm-12">
+                    <div class="form-group">
+                      <div class="input-group">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text"><i class="mdi mdi-lock-outline"></i></span>
+                        </div>
+                        {{ form.password }}
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-xs-12 col-sm-12">
+                    <div class="form-group">
+                      <div class="input-group">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text"><i class="mdi mdi-lock-outline"></i></span>
+                        </div>
+                        {{ form.password2 }}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-md-6 col-xs-12 col-sm-12">
+                    <div class="form-group">
+                      <div class="input-group">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text"><i class="mdi mdi-account"></i></span>
+                        </div>
+                        {{ form.first_name }}
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-xs-12 col-sm-12">
+                    <div class="form-group">
+                      <div class="input-group">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text"><i class="mdi mdi-account"></i></span>
+                        </div>
+                        {{ form.last_name }}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-6 col-xs-12 col-sm-12">
+                    <div class="form-group">
+                      {{ form.gender }}
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-xs-12">
+                    <div class="form-group">
+                      {{ form.user_type }}
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <button id="signup-submit" class="btn btn-primary btn-block btn-lg">SIGN
+                    UP</button><br />
+                </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- content-wrapper ends -->
+</div>
+<!-- page-body-wrapper ends -->
+</div>
+{% endblock content %}
+{% block extra_scripts%}
+<script src="{% static 'auth_app/auth_assets/js/signup.js' %}"></script>
+{% endblock extra_scripts %}

@@ -1,0 +1,472 @@
+html,body{
+width: 100%;
+height: 100%;
+/*font-family: 'Raleway';font-size: 22px;*/
+}
+
+.row{
+  margin-right: 0px !important; margin-left: 0px !important;
+}
+
+/*navbar*/
+#navbar-moving{
+   background-color: black; padding: 1.5em 5em;
+}
+
+#navbar-moving .navbar-brand img{
+width:150px;
+}
+
+.nav-active{
+  color:#fff !important;
+  text-decoration: underline !important;
+}
+.nav-top-margin{
+  margin-top: 6.1rem;
+}
+
+
+#seacrh-input{
+  list-style: none;
+}
+#seacrh-input .form-group{
+  margin-bottom: 0rem !important;
+}
+.has-search ::placeholder {
+  color: rgb(244,18,76);
+}
+.has-search input{
+  border-radius: 50px; color: rgb(244,18,76);
+}
+.has-search .form-control {
+    padding-left: 2.375rem;
+    padding-right: 1rem !important;
+}
+
+.has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+}
+ #custom-ul .nav-item a{
+  color:rgb(244,18,76);
+  margin-right: 1em ;
+  font-weight: bold;
+}
+#custom-ul .dropdown-menu{
+  background-color: rgb(249,223,116); padding: .5em;
+}
+#custom-ul .dropdown-item{
+  background-color: #fff;color: rgb(244,18,76);
+}
+#moving-form ::placeholder{
+  color: grey !important;
+}
+#moving-form .form-control{
+  color: rgb(244,18,76) !important;
+}
+
+
+
+/*Colors*/
+.yellowish-color{
+  color: rgb(249,223,116) !important;
+}
+.dark-yellow-color{
+  color:#e4cd69 !important;
+}
+.reddish-color{
+  color: rgb(244,18,76) !important;
+}
+
+
+/*Service section*/
+
+/*.service{
+  margin-bottom: 5em;
+}*/
+
+section.service {
+  background-position: center;
+  background-image: url("../images/moving.jpg");
+  background-size: cover;
+  min-height:auto;
+  padding-bottom: 2rem;
+}
+.online-book-row{
+  margin-top: 4em;
+}
+.online-book-row .book-padding{
+  padding-bottom: 1rem;
+}
+
+/*moving form*/
+
+.moving-form-wrapper{
+  background-color: rgb(244,18,76); padding: 2em 2em 1em 2em; width: 400px;
+}
+#moving-form .input-group-text{
+  background-color: #fff !important; color:rgb(176,152,24) !important; padding-right: 0px; padding-left: 8px;
+}
+
+.btn-compare{
+  background-color: rgb(249,223,116);color: rgb(244,18,76); width: 100%; padding: .5em;
+}
+
+/*main portion starts*/
+#main{
+  padding-left: 0px; padding-right: 0px; padding-top: 3em; padding-bottom: 5em;
+  background-color: #f7f7f7;
+}
+.b-b-dark-yellow{
+  border-bottom: 1px solid #e4cd69;
+}
+.b-r-dark-yellow{
+  border-right: 1px solid #e4cd69;
+}
+
+.radio-wrapper {
+    padding-left: 25px !important;
+  }
+/*footer*/
+#footer{
+  background-color: #e4cd69;
+  padding: 3em 4em;
+}
+#footer h5{
+   color: #6c757d;
+   font-weight: lighter;
+}
+.tumblr-icon{
+  margin-right: 2em;
+  margin-left: 2em;
+}
+.chat-wrapper{
+  width: 350px;
+}
+#chat-popup2{
+  position: fixed;bottom: 0%;right: 1.6%;background-color: white;z-index: 500;
+}
+.chat-icon{
+  position: fixed;bottom: 0%;right: 1.6%;z-index: 400;
+}
+
+
+/*Bootstrap Carosel CSS*/
+.option #op1, .option #op3{
+  border-bottom:0.2px rgb(183, 183, 183, 0.3) groove;border-right:0.2px rgb(183, 183, 183, 0.3) groove;
+}
+.option #op2, .option #op4{
+  border-bottom:0.2px rgb(183, 183, 183, 0.3) groove;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 25px;
+  width: 25px;
+  background-image:none;
+}
+
+.carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 33px;
+  color: #e02c65;
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 33px;
+  color: #e02c65;
+}
+
+.num-badge{
+  padding:4px 10px;
+  background-color: #e02c65;
+  border-radius: 100%;
+  color:white;
+  font-size: 15px;
+}
+.num-badge-hover{
+  padding:4px 10px;
+  background-color: white;
+  border-radius: 100%;
+  color:#e02c65;
+  font-size: 15px;
+}
+.active-option{
+  background-color: #e02c65!important;
+}
+.active-option h4,.active-option p{
+  color:white!important;
+}
+.active-option .num-badge-hover,
+.active-option .num-badge{
+  padding:4px 10px!important;
+  background-color: white!important;
+  border-radius: 100%!important;
+  color:#e02c65!important;
+  font-size: 15px!important;
+}
+
+
+.my-option{
+  -webkit-transition:background 1s;
+-moz-transition:background 1s;
+-o-transition:background 1s;
+transition:background 1s;
+}
+
+/*--------------Section 3-------------*/
+.section-3{
+  min-height: 25vh;
+  padding-bottom: 4.5%;
+}
+.imgUser{
+  height: 15%;
+  width: 15%;
+  border-radius: 50%;
+  background-color: white;
+  border: 1px solid white;
+    padding: 2px;
+    margin-bottom: 2%;
+}
+
+.section-3 p{
+    font-style: italic;
+    line-height: 32px;
+    font-size: .875rem;
+}
+.qoute1{
+  height: 1em;
+  width:1em;
+}
+.carousel-caption {
+    position: absolute;
+     right: unset; 
+    top: 20px;
+     bottom: unset; 
+    left: 15%;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+     text-align: unset; 
+}
+.btn-tell-friend{
+  background-color: #e4cd69; padding: .5rem 3rem;
+}
+.b-b-groove{
+border-bottom:0.2px rgb(183, 183, 183, 0.3) groove;
+}
+
+
+/*Modal*/
+
+
+.btn-edit-profile{
+  background-color: rgb(244,18,76); padding: .5em 2em;
+}
+
+
+
+.feature-header .feature-sub-title{
+padding-left: 2.4rem;
+}
+.feature-header h3 span{
+  padding-left: 2.4rem;
+}
+
+
+
+
+
+
+/*Responsive*/
+/*// Large devices (desktops, less than 1200px)*/
+@media (max-width: 1199.98px) { 
+
+.feature-header h3 span {
+    padding-left: unset;
+}
+
+#navbar-moving {
+    padding: 1.5em 2em;
+}
+.online-book-row {
+    margin-top: 6em;
+}
+.online-book-row h1{
+    font-size: 4em;
+}
+.online-book-row h4{
+    font-size: 3em;
+}
+
+
+
+ }
+/*// Medium devices (tablets, less than 992px)*/
+@media (max-width: 991.98px) {
+
+.navbar-toggler{
+  background-color:  rgb(214,19,91) !important;
+ }
+#seacrh-input .form-group {
+    margin-top: 1rem;
+    margin-bottom: .5rem !important;
+}
+.has-search {
+      width: 250px;
+}
+#custom-ul .nav-item a {
+    margin-right: .5em;
+    font-size: 1.4em;
+}
+ #custom-ul .dropdown-menu {
+    width: 240px;
+}
+
+.online-book-row h1 {
+    font-size: 3.3em;
+}
+.online-book-row h4 {
+    font-size: 2.4em;
+}
+.moving-form-container {
+    top: 70%;
+    left: 25%;
+}
+/*modal*/
+
+.modal-header h6 a{
+  font-size: 1.5em;
+}
+
+}
+/*// Small devices (landscape phones, less than 768px)*/
+@media (max-width: 767.98px) { 
+#profile-modal .modal-lg{
+max-width: 500px !important;
+    margin: 1.75rem auto !important;
+ }   
+
+.online-book-row h1 {
+    font-size: 2.9em;
+}
+.online-book-row h4 {
+    font-size: 3em;
+}
+.feature-header h3 span {
+    padding-left: 2.4rem;
+}
+
+.b-r-dark-yellow {
+    border-right: none !important;
+}
+
+.float-respon{
+  float: none !important;
+}
+
+#footer{
+  padding: 2em 1em;
+} 
+.respon-h4{
+  font-size: 1.4em;
+}
+
+ }
+
+/*// Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) { 
+    #navbar-moving {
+    padding:  1em !important;
+}
+#navbar-moving .navbar-brand img {
+    width: 100px !important;
+}
+.navbar-toggler {
+    padding: .0rem .25rem;
+    font-size: 1rem;
+}
+
+.moving-form-wrapper {
+    background-color: rgb(244,18,76);
+    padding: 2em 1em 1em 1em;
+    width: 300px;
+}
+.feature-header h3 {
+    font-size: 1.5rem;
+}
+.feature-header h3 span {
+    padding-left: unset;
+}
+.carousel-caption h3{
+  font-size:  .9rem;
+}
+ #tell-friend h4 {
+    font-size: 1.25rem;
+}
+.online-book-row {
+    margin-top: 2em;
+}
+.online-book-row h1 {
+    font-size: 1.5em;
+}
+.online-book-row h4 {
+    font-size: 1.6em;
+}
+.padding-xs{
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+
+#footer h5{
+  font-size: .8em;
+ }
+
+ #footer h6{
+  font-size: .9em;
+ }
+
+ .tumblr-icon-head-p{
+ padding-left: 0px !important;
+ padding-right: 0px !important;
+ text-align: center !important;
+}
+.tumblr-icon{
+  margin-left: 1em;
+  margin-right: 1em;
+}
+.row-custom h4{
+  font-size: 1em;
+}
+.modal-body h5{
+  font-size: .8em;
+}
+.nav-top-margin {
+    margin-top: 4.5rem;
+}
+
+#chat-popup2{
+   right: -14.9%;
+}
+.chat {
+    width: 300px !important;
+    }
+.chat .chat-message textarea {
+    width: 78% !important;
+}
+
+
+
+ }
+
+

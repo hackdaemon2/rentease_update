@@ -1,0 +1,111 @@
+{% load static %}
+{% load humanize %}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>{{ app_name | title }} - {% block title %}{% endblock title %}</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" type="text/css" href="{% static 'main_app/assets/bootstrap-4.3/css/bootstrap.min.css' %}">
+	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> -->
+	
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+    {% block pagestyle %}
+    {% endblock pagestyle %}
+
+</head>
+<body>
+
+
+<header>
+  <!-- navbar starts -->
+		<nav id="navbar-moving" class="navbar navbar-expand-lg navbar-light fixed-top">
+		  <a class="navbar-brand" href="{% url 'main_app:home' %}"><img src="{% static 'main_app/assets/images/logo-black1.png' %}"></a>
+		  <button  class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		    <span class="navbar-toggler-icon"></span>
+		  </button>
+
+		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+		  	<li class="nav-item mx-auto" id="search-input">
+				<div class="form-group has-search" >
+				    <span class="fa fa-search form-control-feedback"></span>
+				    <input type="text" class="form-control form-control" placeholder="Search Apartment..">
+				</div>
+			</li>
+			
+		    <ul id="custom-ul" class="navbar-nav ml-auto">
+		    
+			    <li class="nav-item" >
+			        <a class="nav-link" href="{% url 'main_app:find_roommate' %}">Find a roomate</a>
+			    </li>
+                {% if request.path != '/moving_service' and request.path != '/cleaning_service' %}
+                    <li class="nav-item dropdown text-white">
+                        <a class="nav-link nav-active" href="javascript:void(0);" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Vendor<i class="fas fa-angle-down ml-2"></i>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">   
+                            <a class="dropdown-item mb-2" href="{% url 'main_app:moving_service' %}">Moving Service</a>
+                            <a class="dropdown-item" href="{% url 'main_app:cleaning_service' %}">Cleaning Service</a>
+                        </div>
+                    </li>
+               {% endif %}
+		    </ul>
+		  </div>
+		</nav>
+		<!-- navbar ends -->
+{% block contents %}
+{% endblock contents %}
+<footer id="footer" class="continer">
+	
+		<div class="row justify-content-center row-custom" >
+				<div class="col-4 ">
+					<h4 class="text-muted pb-2">RentEase</h4>
+					<span>
+	          			<h5>Lorem ipsum dolor amet sit</h5>
+	          			<h5>Lorem ipsum dolor amet sit</h5>
+          			</span>
+				</div>
+          		
+          		<div class="col-4 text-center">
+          			<h4 class="text-muted pb-2">Useful Links</h4>
+          			<span>
+	          			<a href="{% url 'main_app:vendor' %}"><h5>Vendors</h5></a>
+	          			<a href="{% url 'main_app:contact_us' %}"><h5>Contact Us</h5></a>
+	          			<a href="{% url 'main_app:faq' %}"><h5>FAQ</h5></a>
+	          			<a href="{% url 'main_app:about_us' %}"><h5>About Us</h5></a>	
+          			</span>
+          		</div>
+ 				
+ 				<div class="col-4 text-right tumblr-icon-head-p">
+          			<h4 class="text-muted pb-2 respon-h4">We are social</h4>
+          			<span>
+	          			<h5>
+	          				<a href=""><i class="fab fa-facebook-f text-muted"></i></a>
+	          				<a href=""><i class="fab fa-tumblr text-muted tumblr-icon"></i></a>
+	          				<a href=""><i class="fab fa-linkedin-in text-muted "></i></a>		
+	          			</h5>
+          			</span>
+          		</div>       		
+		</div>
+		<div class="row">
+			<div class="col-12 mt-lg-0 mt-3">
+			<h6 class="text-muted">© {{ app_name | title }} {{ current_year }}. All rights Reserved</h6>
+			</div>
+		</div>	
+			
+					
+	</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script type="text/javascript" src="{% static 'main_app/assets/bootstrap-4.3\js\bootstrap.min.js' %}"></script>
+
+{% block pagescripts %}
+{% endblock pagescripts %}
+<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> -->
+</body>
+</html>

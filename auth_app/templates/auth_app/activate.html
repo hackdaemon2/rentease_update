@@ -1,0 +1,61 @@
+{% extends 'auth_app/base_auth.html' %}
+{% load static %}
+
+{% block title %}
+Signup Success
+{% endblock title %}
+
+{% block content %}
+<div class="container-scroller">
+    <div class="container-fluid page-body-wrapper full-page-wrapper">
+        <div class="content-wrapper auth p-0 theme-two">
+            <div class="row d-flex align-items-stretch">
+                <div class="col-md-4 banner-section d-none d-md-flex align-items-stretch justify-content-center">
+                    <div class="slide-content bg-1">
+                    </div>
+                </div>
+                <div class="col-12 col-md-8 h-100 bg-white">
+                    <div class="auto-form-wrapper d-flex align-items-center justify-content-center flex-column">
+                        <div class="nav-get-started">
+                            <p>Don't have an account?</p>
+                            <a class="btn get-started-btn" href="{% url 'auth_app:signup' %}">GET STARTED</a>
+                            <a class="btn get-started-btn" href="/">HOME</a>
+                        </div>
+                        {% if activation_status %}
+                        <div class="alert alert-success">
+                            <h3>Active Account</h3>
+                            <p>
+                                Your account for {{ user_email }} is active on {{ app_name | title }}. You can proceed to  {% if user.is_authenticated %} dashboard {% else %} login {% endif %}.
+                            </p>
+                        </div>
+                        {% else %}
+                        <div class="alert alert-danger">
+                            <h3>Inactive Account</h3>
+                            <p>
+                                Your account is not active on {{ app_name | title }} due to an error. Please contact us on {{ support_email }} for further details on how to activate your account.
+                            </p>
+                        </div>
+                        {% endif %}
+                        <div class="form-group">
+                        {% if not user.is_authenticated %}
+                            <button id="redirect-to" data-url="{% url 'auth_app:login' %}"
+                                class="btn btn-info btn-outline btn-lg">Continue to Login</button>
+                        {% else %}
+                            <button id="redirect-to" data-url="{% url 'main_app:dashboard' %}"
+                                class="btn btn-info btn-outline btn-lg">Continue to Dashboard</button>
+                        {% endif %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- content-wrapper ends -->
+    </div>
+    <!-- page-body-wrapper ends -->
+</div>
+</div>
+{% endblock content%}
+
+{% block extra_scripts%}
+<script src="{% static 'auth_app/auth_assets/js/social_auth.js' %}"></script>
+{% endblock extra_scripts %}

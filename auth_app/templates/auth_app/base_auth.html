@@ -1,0 +1,43 @@
+{% load static %}
+{% load humanize %}
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>{{ app_name | title }} - {% block title %}{% endblock title %}</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+			{% block pagestyles %}
+			<link rel="stylesheet" href="{% static 'auth_app/auth_assets/vendors/iconfonts/mdi/css/materialdesignicons.min.css' %}">
+			<link rel="stylesheet" href="{% static 'auth_app/auth_assets/vendors/css/vendor.bundle.base.css' %}">
+			<link rel="stylesheet" href="{% static 'auth_app/auth_assets/vendors/css/vendor.bundle.addons.css' %}">
+			<!-- plugin css for this page -->
+			<link rel="stylesheet" href="{% static 'auth_app/auth_assets/vendors/icheck/skins/all.css' %}">
+			<!-- endinject -->
+			<!-- plugin css for this page -->
+			<!-- End plugin css for this page -->
+			<!-- inject:css -->
+			<link rel="stylesheet" href="{% static 'auth_app/auth_assets/css/style.css' %}">
+			<!-- endinject -->
+			<link rel="shortcut icon" href="{% static 'auth_app/auth_assets/images/favicon.png' %}" />
+			{% endblock pagestyles %}
+
+			<script src="{% static 'auth_app/assets/js/jquery.min.js' %}"></script>
+	</head>
+	<body>	
+		{% block content %}{% endblock content %}
+		<script src="{% static 'auth_app/auth_assets/vendors/js/vendor.bundle.base.js' %}"></script>
+		<script src="{% static 'auth_app/auth_assets/vendors/js/vendor.bundle.addons.js' %}"></script>
+		<!-- endinject -->
+		<!-- Plugin js for this page-->
+		<!-- End plugin js for this page-->
+		<!-- inject:js -->
+		<script src="{% static 'auth_app/auth_assets/js/template.js' %}"></script>
+		<script src="{% static 'auth_app/auth_assets/js/iCheck.js' %}"></script>
+		<script src="{% static 'auth_app/auth_assets/js/typeahead.js' %}"></script>
+		<script src="{% static 'auth_app/auth_assets/js/select2.js' %}"></script>		
+		{% block extra_scripts%}{% endblock extra_scripts %}
+	</body>
+</html>
+			
+        	
